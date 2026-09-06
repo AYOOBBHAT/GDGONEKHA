@@ -119,7 +119,7 @@ export function ApplyForm({
       </label>
       <button
         type="submit"
-        className="rounded-full bg-ink px-6 py-3 text-sm font-medium text-cream transition hover:-translate-y-0.5"
+        className="min-h-12 w-full rounded-full bg-ink px-6 py-3.5 text-sm font-medium text-cream transition hover:-translate-y-0.5 sm:w-auto"
       >
         {variant === "admission" ? "Submit enquiry on WhatsApp" : "Apply via WhatsApp"}
       </button>

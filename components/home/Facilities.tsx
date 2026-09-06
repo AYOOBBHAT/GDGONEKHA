@@ -10,37 +10,37 @@ const tiles = [
     title: "The campus",
     caption: "95-kanal campus in Kupwara",
     image: images.campusAerial,
-    className: "md:col-span-2 md:row-span-2 min-h-[320px] md:min-h-[540px]",
+    className: "md:col-span-2 md:row-span-2 min-h-[240px] sm:min-h-[280px] md:min-h-[540px]",
   },
   {
     title: "School life",
     caption: "A child-focused, technology-enabled campus",
     image: images.campusPortrait,
-    className: "min-h-[240px]",
+    className: "min-h-[200px] sm:min-h-[240px]",
   },
   {
     title: "Learning in motion",
     caption: "Activity, culture and character, every week",
     image: images.news.baisakhi,
-    className: "min-h-[240px]",
+    className: "min-h-[200px] sm:min-h-[240px]",
   },
   {
     title: "Sport",
     caption: "Football, basketball, tennis, volleyball, swimming",
     image: images.gallery.sports1,
-    className: "min-h-[240px]",
+    className: "min-h-[200px] sm:min-h-[240px]",
   },
   {
     title: "Swimming pool",
     caption: "Semi-Olympic pool with trained instructors",
     image: null,
-    className: "min-h-[240px]",
+    className: "min-h-[200px] sm:min-h-[240px]",
   },
 ];
 
 export function Facilities() {
   return (
-    <section className="py-20 md:py-28">
+    <section className="py-14 sm:py-20 md:py-28">
       <div className="container-site">
         <Reveal>
           <SectionHeading
@@ -82,7 +82,10 @@ export function Facilities() {
           ))}
         </div>
         <Reveal className="mt-8">
-          <Link href="/facilities" className="text-sm font-medium text-ink">
+          <Link
+            href="/facilities"
+            className="inline-flex min-h-11 items-center text-sm font-medium text-ink"
+          >
             Explore facilities →
           </Link>
         </Reveal>

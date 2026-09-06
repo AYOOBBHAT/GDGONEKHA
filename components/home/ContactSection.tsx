@@ -5,11 +5,11 @@ import { site } from "@/lib/site";
 
 export function ContactSection() {
   return (
-    <section className="border-t border-line bg-cream-2 py-20 md:py-28">
+    <section className="border-t border-line bg-cream-2 py-14 sm:py-20 md:py-28">
       <div className="container-site grid gap-10 lg:grid-cols-2">
         <Reveal>
           <p className="eyebrow">Visit</p>
-          <h2 className="mt-4 text-4xl font-semibold tracking-[-0.04em]">
+          <h2 className="mt-4 text-[1.85rem] font-semibold tracking-[-0.04em] sm:text-4xl">
             {site.name}
           </h2>
           <address className="mt-6 not-italic text-muted">
@@ -17,38 +17,57 @@ export function ContactSection() {
             <br />
             {site.address.line2}
           </address>
-          <div className="mt-8 space-y-3 text-sm">
-            <p>
-              <span className="eyebrow block mb-1">Phone</span>
-              <a href="tel:18008890880">18008890880</a>
-              <span className="text-muted"> · </span>
-              <a href="tel:9103854896">9103854896</a>
-              <span className="text-muted"> · </span>
-              <a href="tel:9103854897">9103854897</a>
-            </p>
-            <p>
-              <span className="eyebrow block mb-1">Email</span>
-              <a href={`mailto:${site.email}`}>{site.email}</a>
-            </p>
+          <div className="mt-8 space-y-5 text-sm">
+            <div>
+              <span className="eyebrow mb-2 block">Phone</span>
+              <div className="flex flex-col gap-1">
+                {site.phones.map((phone) => (
+                  <a
+                    key={phone.value}
+                    href={phone.href}
+                    className="inline-flex min-h-11 items-center font-medium text-ink"
+                  >
+                    {phone.value}
+                  </a>
+                ))}
+              </div>
+            </div>
+            <div>
+              <span className="eyebrow mb-2 block">Email</span>
+              <a
+                href={`mailto:${site.email}`}
+                className="inline-flex min-h-11 items-center break-all font-medium text-ink"
+              >
+                {site.email}
+              </a>
+            </div>
           </div>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <ButtonLink href="tel:18008890880">
+          <div className="mt-8 flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:flex-wrap">
+            <ButtonLink href="tel:18008890880" className="w-full justify-center sm:w-auto">
               <Phone size={16} /> Call
             </ButtonLink>
-            <ButtonLink href={`mailto:${site.email}`} variant="secondary">
+            <ButtonLink
+              href={`mailto:${site.email}`}
+              variant="secondary"
+              className="w-full justify-center sm:w-auto"
+            >
               <Mail size={16} /> Email
             </ButtonLink>
-            <ButtonLink href="/contact" variant="ghost">
+            <ButtonLink
+              href="/contact"
+              variant="ghost"
+              className="w-full justify-center sm:w-auto"
+            >
               Contact page →
             </ButtonLink>
           </div>
         </Reveal>
         <Reveal delay={0.08}>
-          <div className="overflow-hidden rounded-[1.8rem] border border-line bg-white">
+          <div className="overflow-hidden rounded-[1.4rem] border border-line bg-white sm:rounded-[1.8rem]">
             <iframe
               title="Map of GD Goenka Public School Kupwara"
               src={site.address.mapsEmbed}
-              className="h-[320px] w-full md:h-[400px]"
+              className="h-[260px] w-full sm:h-[320px] md:h-[400px]"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             />

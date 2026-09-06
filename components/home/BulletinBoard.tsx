@@ -66,16 +66,16 @@ export function BulletinBoard() {
   const [tab, setTab] = useState<(typeof tabs)[number]>("Circulars");
 
   return (
-    <section className="bg-cream-2 py-20 md:py-28">
+    <section className="bg-cream-2 py-14 sm:py-20 md:py-28">
       <div className="container-site">
         <p className="eyebrow">School bulletin</p>
-        <h2 className="mt-3 text-4xl font-semibold tracking-[-0.04em] md:text-5xl">
+        <h2 className="mt-3 text-[1.85rem] font-semibold tracking-[-0.04em] sm:text-4xl md:text-5xl">
           Notices, birthdays, calendar.
         </h2>
         <div
           role="tablist"
           aria-label="Bulletin board"
-          className="mt-8 flex gap-2"
+          className="mt-6 flex flex-wrap gap-2 sm:mt-8"
         >
           {tabs.map((item) => (
             <button
@@ -84,7 +84,7 @@ export function BulletinBoard() {
               role="tab"
               aria-selected={tab === item}
               className={cn(
-                "rounded-full border px-4 py-2 text-sm transition",
+                "min-h-11 rounded-full border px-4 py-2.5 text-sm transition",
                 tab === item
                   ? "border-ink bg-ink text-cream"
                   : "border-line bg-white text-muted hover:text-ink",
@@ -95,7 +95,7 @@ export function BulletinBoard() {
             </button>
           ))}
         </div>
-        <div className="mt-8 rounded-3xl border border-line bg-white p-6 md:p-8">
+        <div className="mt-6 rounded-[1.5rem] border border-line bg-white p-5 sm:mt-8 sm:rounded-3xl sm:p-6 md:p-8">
           {tab === "Circulars" ? (
             <ul className="space-y-4">
               {circulars.map((item) => (

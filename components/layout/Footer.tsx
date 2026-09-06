@@ -19,13 +19,13 @@ function Column({
   return (
     <div>
       <p className="eyebrow mb-4 text-gold-dark">{title}</p>
-      <ul className="space-y-2.5">
+      <ul className="space-y-1">
         {links.map((link) => (
           <li key={link.href + link.label}>
             {link.external ? (
               <a
                 href={link.href}
-                className="text-sm text-muted transition hover:text-ink"
+                className="inline-flex min-h-11 items-center text-sm text-muted transition hover:text-ink"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -34,7 +34,7 @@ function Column({
             ) : (
               <Link
                 href={link.href}
-                className="text-sm text-muted transition hover:text-ink"
+                className="inline-flex min-h-11 items-center text-sm text-muted transition hover:text-ink"
               >
                 {link.label}
               </Link>
@@ -49,7 +49,7 @@ function Column({
 export function Footer() {
   return (
     <footer className="border-t border-line bg-cream-2 text-ink">
-      <div className="container-site grid gap-12 py-16 md:grid-cols-2 lg:grid-cols-6 lg:py-20">
+      <div className="container-site grid gap-10 py-12 sm:gap-12 sm:py-16 md:grid-cols-2 lg:grid-cols-6 lg:py-20">
         <div className="lg:col-span-2">
           <Logo />
           <p className="mt-5 max-w-sm text-sm leading-relaxed text-muted">
@@ -60,7 +60,7 @@ export function Footer() {
             <a
               href={site.social.facebook}
               aria-label="Facebook"
-              className="rounded-full border border-line bg-cream p-2 text-ink transition hover:border-gold hover:text-gold-dark"
+              className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-line bg-cream text-ink transition hover:border-gold hover:text-gold-dark"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -69,7 +69,7 @@ export function Footer() {
             <a
               href={site.social.instagram}
               aria-label="Instagram"
-              className="rounded-full border border-line bg-cream p-2 text-ink transition hover:border-gold hover:text-gold-dark"
+              className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-line bg-cream text-ink transition hover:border-gold hover:text-gold-dark"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -78,7 +78,7 @@ export function Footer() {
             <a
               href={site.social.youtube}
               aria-label="YouTube"
-              className="rounded-full border border-line bg-cream p-2 text-ink transition hover:border-gold hover:text-gold-dark"
+              className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-line bg-cream text-ink transition hover:border-gold hover:text-gold-dark"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -97,12 +97,16 @@ export function Footer() {
             <br />
             Jammu & Kashmir
             <br />
-            <a href="tel:18008890880" className="mt-3 block transition hover:text-ink">
+            <a
+              href="tel:18008890880"
+              className="mt-2 inline-flex min-h-11 items-center transition hover:text-ink"
+            >
               18008890880
             </a>
+            <br />
             <a
               href={`mailto:${site.email}`}
-              className="block transition hover:text-ink"
+              className="inline-flex min-h-11 items-center break-all transition hover:text-ink"
             >
               {site.email}
             </a>
@@ -111,19 +115,27 @@ export function Footer() {
       </div>
       <div className="border-t border-line">
         <div className="container-site flex flex-col gap-3 py-5 text-xs text-muted md:flex-row md:items-center md:justify-between">
-          <p>© {new Date().getFullYear()} {site.name}. All rights reserved.</p>
-          <div className="flex flex-wrap gap-4">
-            <Link href="/privacy" className="transition hover:text-ink">
+          <p>
+            © {new Date().getFullYear()} {site.name}. All rights reserved.
+          </p>
+          <div className="flex flex-wrap gap-x-4 gap-y-1">
+            <Link
+              href="/privacy"
+              className="inline-flex min-h-10 items-center transition hover:text-ink"
+            >
               Privacy Policy
             </Link>
-            <Link href="/contact" className="transition hover:text-ink">
+            <Link
+              href="/contact"
+              className="inline-flex min-h-10 items-center transition hover:text-ink"
+            >
               Contact
             </Link>
             <a
               href={site.links.erp}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1 transition hover:text-ink"
+              className="inline-flex min-h-10 items-center gap-1 transition hover:text-ink"
             >
               ERP Login <ArrowUpRight size={12} />
             </a>

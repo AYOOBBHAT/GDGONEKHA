@@ -47,12 +47,12 @@ const actions = [
 ];
 
 const cardClass =
-  "group flex items-center justify-between rounded-2xl border border-line bg-white px-4 py-4 transition duration-300 hover:-translate-y-1 hover:border-ink/30 hover:shadow-[0_12px_30px_rgba(17,17,17,0.05)]";
+  "group flex min-h-[3.5rem] items-center justify-between rounded-2xl border border-line bg-white px-4 py-3.5 transition duration-300 hover:-translate-y-1 hover:border-ink/30 hover:shadow-[0_12px_30px_rgba(17,17,17,0.05)]";
 
 export function QuickActions() {
   return (
     <section className="border-y border-line bg-cream-2/60">
-      <div className="container-site grid gap-3 py-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
+      <div className="container-site grid gap-3 py-6 sm:grid-cols-2 sm:py-8 lg:grid-cols-3 xl:grid-cols-6">
         {actions.map((action, index) => {
           const Icon = action.icon;
           const inner = (

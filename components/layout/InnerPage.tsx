@@ -44,8 +44,8 @@ function Blocks({ blocks }: { blocks: ContentBlock[] }) {
         }
         if (block.type === "table") {
           return (
-            <div key={index} className="my-8 overflow-x-auto rounded-2xl border border-line">
-              <table className="w-full min-w-[520px] text-left text-sm">
+            <div key={index} className="my-8 -mx-1 overflow-x-auto rounded-2xl border border-line scroll-hint">
+              <table className="w-full min-w-[480px] text-left text-sm sm:min-w-[520px]">
                 <thead className="bg-cream-2 text-ink">
                   <tr>
                     {block.headers.map((header) => (
@@ -97,7 +97,7 @@ export function InnerPage({
         title={content.title}
         lead={content.lead}
       />
-      <Container className="py-14 md:py-20">
+      <Container className="py-10 sm:py-14 md:py-20">
         <Blocks blocks={content.blocks} />
         {children}
       </Container>

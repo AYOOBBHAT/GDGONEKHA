@@ -6,7 +6,7 @@ import { whyFeatures } from "@/lib/features";
 
 export function WhyGoenka() {
   return (
-    <section id="why" className="bg-cream-2 py-20 md:py-28">
+    <section id="why" className="bg-cream-2 py-14 sm:py-20 md:py-28">
       <div className="container-site">
         <Reveal>
           <SectionHeading

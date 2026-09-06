@@ -43,7 +43,14 @@ export function Logo({
             inverted ? "text-cream" : "text-ink",
           )}
         >
-          {compact ? "Kupwara" : site.shortName}
+          {compact ? (
+            "Kupwara"
+          ) : (
+            <>
+              <span className="sm:hidden">Kupwara</span>
+              <span className="hidden sm:inline">{site.shortName}</span>
+            </>
+          )}
         </span>
       </span>
     </Link>

@@ -26,13 +26,13 @@ export function ButtonLink({
 }: ButtonProps) {
   const styles = {
     primary:
-      "bg-ink text-cream hover:bg-ink-deep hover:-translate-y-0.5",
+      "min-h-11 bg-ink text-cream hover:bg-ink-deep hover:-translate-y-0.5",
     secondary:
-      "bg-transparent text-ink border border-line hover:border-ink hover:-translate-y-0.5",
-    ghost: "bg-transparent text-ink px-0 hover:text-gold-dark",
-    gold: "bg-gold text-ink hover:bg-gold-dark hover:text-cream hover:-translate-y-0.5",
+      "min-h-11 bg-transparent text-ink border border-line hover:border-ink hover:-translate-y-0.5",
+    ghost: "min-h-11 bg-transparent text-ink px-3 hover:text-gold-dark",
+    gold: "min-h-11 bg-gold text-ink hover:bg-gold-dark hover:text-cream hover:-translate-y-0.5",
     light:
-      "bg-cream text-ink hover:bg-white hover:-translate-y-0.5",
+      "min-h-11 bg-cream text-ink hover:bg-white hover:-translate-y-0.5",
   }[variant];
 
   const classes = cn(
