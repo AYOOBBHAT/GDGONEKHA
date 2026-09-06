@@ -18,14 +18,14 @@ function Column({
 }) {
   return (
     <div>
-      <p className="eyebrow mb-4">{title}</p>
+      <p className="eyebrow mb-4 text-gold-dark">{title}</p>
       <ul className="space-y-2.5">
         {links.map((link) => (
           <li key={link.href + link.label}>
             {link.external ? (
               <a
                 href={link.href}
-                className="text-sm text-muted transition hover:text-cream"
+                className="text-sm text-muted transition hover:text-ink"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -34,7 +34,7 @@ function Column({
             ) : (
               <Link
                 href={link.href}
-                className="text-sm text-muted transition hover:text-cream"
+                className="text-sm text-muted transition hover:text-ink"
               >
                 {link.label}
               </Link>
@@ -48,11 +48,11 @@ function Column({
 
 export function Footer() {
   return (
-    <footer className="bg-ink-deep text-cream">
+    <footer className="border-t border-line bg-cream-2 text-ink">
       <div className="container-site grid gap-12 py-16 md:grid-cols-2 lg:grid-cols-6 lg:py-20">
         <div className="lg:col-span-2">
-          <Logo inverted />
-          <p className="mt-5 max-w-sm text-sm leading-relaxed text-white/60">
+          <Logo />
+          <p className="mt-5 max-w-sm text-sm leading-relaxed text-muted">
             An endeavour of Anwar Sultana Charitable Trust. A CBSE school in
             Kupwara — educating children to thrive, for life.
           </p>
@@ -60,7 +60,7 @@ export function Footer() {
             <a
               href={site.social.facebook}
               aria-label="Facebook"
-              className="rounded-full border border-white/15 p-2 hover:border-gold"
+              className="rounded-full border border-line bg-cream p-2 text-ink transition hover:border-gold hover:text-gold-dark"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -69,7 +69,7 @@ export function Footer() {
             <a
               href={site.social.instagram}
               aria-label="Instagram"
-              className="rounded-full border border-white/15 p-2 hover:border-gold"
+              className="rounded-full border border-line bg-cream p-2 text-ink transition hover:border-gold hover:text-gold-dark"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -78,7 +78,7 @@ export function Footer() {
             <a
               href={site.social.youtube}
               aria-label="YouTube"
-              className="rounded-full border border-white/15 p-2 hover:border-gold"
+              className="rounded-full border border-line bg-cream p-2 text-ink transition hover:border-gold hover:text-gold-dark"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -91,39 +91,39 @@ export function Footer() {
         <Column title="Admissions" links={footerNav.admissions} />
         <div>
           <Column title="Resources" links={footerNav.resources} />
-          <p className="eyebrow mt-8 mb-4">Contact</p>
-          <address className="text-sm not-italic leading-relaxed text-white/60">
+          <p className="eyebrow mt-8 mb-4 text-gold-dark">Contact</p>
+          <address className="text-sm not-italic leading-relaxed text-muted">
             Kupwara
             <br />
             Jammu & Kashmir
             <br />
-            <a href="tel:18008890880" className="mt-3 block hover:text-cream">
+            <a href="tel:18008890880" className="mt-3 block transition hover:text-ink">
               18008890880
             </a>
             <a
               href={`mailto:${site.email}`}
-              className="block hover:text-cream"
+              className="block transition hover:text-ink"
             >
               {site.email}
             </a>
           </address>
         </div>
       </div>
-      <div className="border-t border-white/10">
-        <div className="container-site flex flex-col gap-3 py-5 text-xs text-white/45 md:flex-row md:items-center md:justify-between">
+      <div className="border-t border-line">
+        <div className="container-site flex flex-col gap-3 py-5 text-xs text-muted md:flex-row md:items-center md:justify-between">
           <p>© {new Date().getFullYear()} {site.name}. All rights reserved.</p>
           <div className="flex flex-wrap gap-4">
-            <Link href="/privacy" className="hover:text-cream">
+            <Link href="/privacy" className="transition hover:text-ink">
               Privacy Policy
             </Link>
-            <Link href="/contact" className="hover:text-cream">
+            <Link href="/contact" className="transition hover:text-ink">
               Contact
             </Link>
             <a
               href={site.links.erp}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1 hover:text-cream"
+              className="inline-flex items-center gap-1 transition hover:text-ink"
             >
               ERP Login <ArrowUpRight size={12} />
             </a>

@@ -1,7 +1,5 @@
 import {
   ageCriteria,
-  mpdGeneral,
-  mpdInfrastructure,
   schoolSongLyrics,
   type PageContent,
 } from "./content";
@@ -10,19 +8,19 @@ export const pages: Record<string, PageContent> = {
   about: {
     eyebrow: "Know us",
     title: "The school",
-    lead: "Education that prepares them to thrive. For life.",
+    lead: "Education that prepares to Thrive. For life.",
     blocks: [
       {
         type: "p",
-        text: "GD Goenka Kupwara is an endeavour of Anwar Sultana Charitable Trust. It is an initiative to impart quality education in an environment which is caring, stimulating and challenging. The school has ultramodern architecture with state-of-the-art technology. It rises above the confines of conventional teaching.",
+        text: "G D Goenka Kupwara is an endeavour of Anwar Sultana Charitable Trust. It is an initiative to impart quality education in an environment, which is caring, stimulating, and challenging. The school has an ultramodern architecture with state-of-the-art technology. The school rises above the confines of conventional teaching.",
       },
       {
         type: "p",
-        text: "The campus stretches over 95 kanals. Every detail has been carefully undertaken — flooring with anti-skid tiles, antibacterial wall paints, soundproof classrooms, a Wi-Fi-enabled campus, centralized air-conditioning, a semi-Olympic size swimming pool, a spacious auditorium and a food court. Lawn tennis, basketball, volleyball and football courts have been created to international standards.",
+        text: "The campus stretches over 95 Kanals. Every detail on the campus has been carefully undertaken — flooring with anti-skid tiles, antibacterial wall paints, soundproof classrooms, a Wi-Fi-enabled campus, centralized air conditioning, a semi-Olympic size swimming pool, a spacious auditorium, and a food court are a few of the allusions. Sports facilities vis-a-vis lawn tennis, basketball, volleyball, and football courts have been created on international standards.",
       },
       {
         type: "p",
-        text: "The school philosophy is based on treating each child in a manner that provides appropriate development programmes, so as to encourage not just learning but lifelong wisdom.",
+        text: "The school philosophy is based on treating each child in a manner that provides appropriate development programs, so as to encourage not just learning but lifelong wisdom.",
       },
     ],
   },
@@ -33,33 +31,47 @@ export const pages: Record<string, PageContent> = {
     blocks: [
       {
         type: "quote",
-        text: "When I look back at the journey that began in 1994, I recall a simple yet powerful vision — one rooted not just in academics, but in the wellbeing, dignity and safety of every child.",
+        text: "When I look back at the journey that began in 1994, I recall a simple yet powerful vision – one rooted not just in academics, but in the wellbeing, dignity and safety of every child...",
         cite: "Sh. Anjani Kumar Goenka",
         role: "Chairman, GD Goenka Group",
       },
       {
         type: "p",
-        text: "GD Goenka was founded to raise the bar for school education in India. From the beginning, the group chose to lead, not follow. It was among the first to introduce GPS-enabled, air-conditioned school buses. Children drank mineral water long before it was common practice. Clinical psychiatrists were brought in to support emotional wellbeing when few schools spoke of mental health.",
+        text: "GD Goenka was founded to raise the bar for school education in India. And from the very beginning, we chose to lead, not follow.",
       },
       {
         type: "p",
-        text: "Every decision was guided by one belief: children deserve the best start in life, in every sense of the word. In an age of AI, rapid change and global challenges, the duty is to equip students with not just knowledge, but resilience, empathy and purpose.",
+        text: "We were the first to introduce GPS-enabled, air-conditioned school buses – the iconic yellow buses that set a new benchmark in safety and comfort. We ensured children drank only mineral water, long before it became common practice. We brought in clinical psychiatrists to support emotional well-being, at a time when few were even speaking of mental health in schools. Every decision, every detail was guided by one belief: that our children deserve the best start in life, in every sense of the word.",
+      },
+      {
+        type: "p",
+        text: "Today, as I see GD Goenka grow across the country and beyond, I feel immense pride – but even more, a deep sense of responsibility. We must continue to evolve with the times while staying true to the values we began with. In an age of AI, rapid change and global challenges, our duty is to equip our students with not just knowledge, but resilience, empathy, and a sense of purpose.",
+      },
+      {
+        type: "p",
+        text: "Every child deserves an education that honours their individuality and prepares them to face the world with courage and confidence. At GD Goenka, we remain committed to that promise – every day, for every learner, in every classroom.",
+      },
+      {
+        type: "quote",
+        text: "Warm regards,",
+        cite: "Sh. Anjani Kumar Goenka",
+        role: "Chairman, GD Goenka Group",
       },
     ],
   },
   vision: {
     eyebrow: "Know us",
     title: "Vision & mission",
-    lead: "Thrive. For life.",
+    lead: "Thrive. For Life.",
     blocks: [
       { type: "h2", text: "Vision" },
       {
         type: "p",
-        text: "Each student should develop and mould their ambitions towards perfection. The goal is to support and nurture the student’s — and our own — natural desire to be lifelong learners. We anticipate creativity and initiative, enterprise and innovation, and cognitive strategies for progressive learning.",
+        text: "Thrive. For Life.",
       },
       {
         type: "p",
-        text: "Our vision is to prepare and motivate students for a rapidly changing world, by instilling critical thinking, a global perspective and respect for honesty, loyalty, perseverance and compassion. Students will have success for today and be prepared for tomorrow.",
+        text: "In our vision for the school, each and every student should develop and mould their ambitions towards perfection. The goal is to support and nurture the student’s and our own natural desire to be lifelong learners. We anticipate creativity and initiative, enterprise and innovation, and cognitive strategies for progressive learning. Our vision is to prepare and motivate our students for a rapidly changing world, by instilling in them critical thinking skills, a global perspective and a respect for core values of honesty, loyalty, perseverance and compassion. Students will have success for today and be prepared for tomorrow.",
       },
       { type: "h2", text: "Mission" },
       {
@@ -68,11 +80,15 @@ export const pages: Record<string, PageContent> = {
       },
       {
         type: "p",
-        text: "The school motto — Higher Stronger Brighter — takes its core idea from a quest for excellence, an insatiable thirst for knowledge and a limitless craving for the latest.",
+        text: "The school motto HIGHER STRONGER BRIGHTER takes its core idea from a quest for excellence, an insatiable thirst for knowledge and a limitless craving for the latest.",
       },
       {
         type: "p",
-        text: "The school aspires to be a national leader in developing educated contributors, career-ready learners and global citizens, and in generating a meaningful, high-impact partnership with society. The faculty, in partnership with parents, is committed to college and career readiness. Students are empowered to meet current and future challenges with social awareness, civic responsibility and personal growth.",
+        text: "Our school aspires to be a national leader in developing educated contributors, career ready learners and global citizens, and in generating a meaningful, high impact, progressive and sustainable partnership with society.",
+      },
+      {
+        type: "p",
+        text: "Our mission is to provide a safe haven where everyone is valued and respected. The faculty, in partnership with parents and families are fully committed to student’s college and career readiness. Students are empowered to meet current and future challenges to develop social awareness, civic responsibility and personal growth.",
       },
     ],
   },
@@ -82,101 +98,31 @@ export const pages: Record<string, PageContent> = {
     lead: "Let the journey start with a song.",
     blocks: schoolSongLyrics.map((line) => ({ type: "p" as const, text: line })),
   },
-  management: {
-    eyebrow: "Know us",
-    title: "The management",
-    lead: "Governance that holds the school to its promise — safety, scholarship and character.",
-    blocks: [
-      {
-        type: "p",
-        text: "GD Goenka Public School Kupwara is an endeavour of Anwar Sultana Charitable Trust. The School Management Committee oversees the institution’s academic, administrative and pastoral life.",
-      },
-      {
-        type: "p",
-        text: "Parents are invited to be active members of the committee and to play a role in forming a more dynamic curriculum. The official committee document is published below.",
-      },
-    ],
-  },
-  pta: {
-    eyebrow: "Know us",
-    title: "Parent Teacher Body",
-    lead: "A structured partnership between home and school.",
-    blocks: [
-      {
-        type: "p",
-        text: "The school’s endeavour is to ensure that the parents’ role in their child’s development is well-structured. Parents are invited to be active members of the school management committee and to play a vibrant role in forming a more dynamic and engaging curriculum.",
-      },
-      {
-        type: "p",
-        text: "Monthly parent–teacher sessions and mothers’ training are part of the school’s teaching mechanism. The relationship is not ceremonial. It is how a child is known fully — at home and in the classroom.",
-      },
-    ],
-  },
   director: {
     eyebrow: "Know us",
     title: "Director's message",
-    lead: "Creating opportunities, challenging minds, encouraging innovation.",
+    lead: "Official message will be published soon.",
     blocks: [
       {
-        type: "p",
-        text: "With immense pride I welcome you to GD Goenka Public School’s website. You could be a parent, a student, a staff member or anyone interested in the learning environment of our school. I invite you to navigate this ‘online school’ to understand how we provide the best environment for little ones and young adults.",
-      },
-      {
-        type: "p",
-        text: "Right from its inception, the institution has marched forward to spread the light of education and pave the path of academic excellence. The key focus areas remain creating opportunities, challenging minds, encouraging innovation and sustaining excitement.",
-      },
-      {
-        type: "p",
-        text: "Our objective is to continue being recognised as a torch-bearer of leading education methods — an institution whose students define a future not only for themselves but for the world. The values and environment we provide are sustainable and see children through their formative years. The investment we put into children today will help them achieve greater heights.",
-      },
-      {
-        type: "quote",
-        text: "Thank you and stay blessed.",
-        cite: "Raja Zubair Ahmed",
-        role: "Director",
+        type: "note",
+        text: "The Director’s message will be added here shortly. Please check back later, or contact the school office for more information.",
       },
     ],
   },
   principal: {
     eyebrow: "Know us",
     title: "Principal's message",
-    lead: "Whatever guides a person closer to truth is education.",
+    lead: "Official message will be published soon.",
     blocks: [
       {
-        type: "p",
-        text: "Dear Parents, thank you for visiting our website.",
-      },
-      {
-        type: "p",
-        text: "Whatever guides a person closer to truth is education. The education that facilitates this process then becomes liberating. If we truly aim to transform lives, a clear distinction between false knowledge and genuine knowledge must be drawn. Knowledge that teaches only the means of earning a livelihood is false; knowledge that imparts wisdom and enriches life beyond livelihood is true knowledge.",
-      },
-      {
-        type: "p",
-        text: "We must not focus solely on what a child needs to learn just to fit in with society. Instead, we should ask: what unique qualities does a child possess which could be honed to help them grow? Only then can we guide the emerging generation to shape society in accordance with their own aspirations — without imposing current norms onto them.",
-      },
-      {
-        type: "p",
-        text: "Education should imbue resilience, reveal values that serve as a roadmap, enrich the spirit and instil a love for one’s pursuits. It should teach what truly matters and how to lead a fulfilling life.",
-      },
-      {
-        type: "p",
-        text: "You do not have to get top scores in exams to be successful. Life is about more than monetary pursuits. As students become adults, they will not be defined by medals, but by the confidence, communication skills, trust and belief they cultivate.",
-      },
-      {
-        type: "p",
-        text: "Our primary objective is to nurture students who are academically proficient and also creative, tolerant, positive and self-assured — well-rounded individuals who respect others’ opinions and stand up for what they believe in. This, to me, embodies the essence of true education.",
-      },
-      {
-        type: "quote",
-        text: "Regards.",
-        cite: "Sartaj Mir",
-        role: "Principal — Masters in Public Administration (Jiwaji University); M.A. Political Science (Kashmir University); PG Diploma in Guidance & Counselling (AMU); B.Ed.; PGDCA",
+        type: "note",
+        text: "The Principal’s message will be added here shortly. Please check back later, or contact the school office for more information.",
       },
     ],
   },
   academics: {
     eyebrow: "Academics",
-    title: "A curriculum that connects.",
+    title: "Academics",
     lead: "English-medium, co-educational, CBSE-affiliated — with activity, expression and thought at the centre.",
     blocks: [
       {
@@ -185,42 +131,7 @@ export const pages: Record<string, PageContent> = {
       },
       {
         type: "p",
-        text: "An integrated curriculum teaches a unit across disciplines so children make connections. Activities, project work, presentations, educational trips and guest lectures make concept formation lasting. Monthly weeks — environment, literary, cultural, science, cosmic — give the year a rhythm beyond tests.",
-      },
-    ],
-  },
-  curriculum: {
-    eyebrow: "Academics",
-    title: "Curriculum",
-    lead: "CBSE, integrated, thematic — and never only a textbook.",
-    blocks: [
-      {
-        type: "p",
-        text: "The school is an English-medium, co-educational secondary school affiliated to CBSE (affiliation no. 730129). The syllabus for subjects is as prescribed by CBSE.",
-      },
-      {
-        type: "h2",
-        text: "Nursery till Class I",
-      },
-      {
-        type: "p",
-        text: "An integrated, thematic and activity-based approach. For the youngest children, the play-way method is adopted. Classes are theme-designed so that learning happens by observation and doing, correlating knowledge across experiences. Individual attention makes learning a pleasurable pursuit.",
-      },
-      {
-        type: "h2",
-        text: "The teacher as coordinator",
-      },
-      {
-        type: "p",
-        text: "The teacher becomes a group coordinator — initiating work and nurturing students without the phobia of examinations and homework. Development of oral and written expression is emphasised. Home assignments are not a carry-over of class work but oriented towards honing individual talents.",
-      },
-      {
-        type: "h2",
-        text: "Co-curricular life",
-      },
-      {
-        type: "p",
-        text: "Western and Indian music and dance, instrumental music and related arts give a winning edge to personality. The aim is to imbibe application, analytical and creative skills.",
+        text: "Explore our teaching methodology, academic calendar and book list to understand how learning is planned across the year.",
       },
     ],
   },
@@ -231,124 +142,130 @@ export const pages: Record<string, PageContent> = {
     blocks: [
       {
         type: "p",
-        text: "The school employs competent faculty members qualified to accomplish the mission and goals of the institution. When determining acceptable qualifications, primary consideration is given to educational credentials, alongside competence, effectiveness and capacity — including related work experience, professional degrees and certifications, honours, documented excellence in teaching, and other demonstrated contributions to student learning.",
+        text: "The school employs competent faculty members qualified to accomplish the mission and goals of the institution. When determining acceptable qualifications of its faculty, the school gives primary consideration to the educational qualifications and also attaches great importance to competence, effectiveness, and capacity, including related work experiences in the field, professional degrees and certifications, honors and awards, continuous documented excellence in teaching, or other demonstrated competencies and achievements that contribute to effective teaching and student learning outcomes.",
       },
       {
         type: "p",
-        text: "Management encourages faculty to upgrade their specialisation and pursue research that develops their practice further. Capacity-building programmes — including 21st-century skills workshops — are part of school life.",
+        text: "The management encourages the faculty to upgrade their specialization and pursue any research work to develop their talents further.",
       },
     ],
   },
-  exam: {
+  calendar: {
     eyebrow: "Academics",
-    title: "Exam & evaluation",
-    lead: "Assessment that identifies need, not merely records rank.",
+    title: "Academic calendar",
+    lead: "Official calendar will be published soon.",
     blocks: [
       {
-        type: "p",
-        text: "In each academic year the school holds tests with the following weightage. A student is promoted on the combined result of both terms.",
+        type: "note",
+        text: "The academic calendar for the current session will be added here shortly. Please check back later, or confirm dates with the school office and the ERP parent portal.",
       },
-      {
-        type: "table",
-        headers: ["Term I", "Weight", "Term II", "Weight"],
-        rows: [
-          ["PWT 1", "10%", "PWT 3", "10%"],
-          ["PWT 2", "10%", "PWT 4", "10%"],
-          ["Project & assignment", "10%", "Project & assignment", "10%"],
-          ["T 1", "20%", "T 2", "40%"],
-          ["Total", "50%", "Total", "50%"],
-        ],
-      },
-      {
-        type: "p",
-        text: "The objective is not merely to record achievement but to identify weakness and strength, so instruction can be adapted. Minimum attendance for the annual examination is 75%, including attendance at a previous school if admitted on transfer. The Principal may condone shortage up to 15% in medical or extraordinary circumstances.",
-      },
-      {
-        type: "h2",
-        text: "Grading",
-      },
-      {
-        type: "table",
-        headers: ["Grade", "Range", "Descriptor"],
-        rows: [
-          ["A+", "91–100%", "Excellent"],
-          ["A", "81–90%", "Very Good"],
-          ["B+", "71–80%", "Good"],
-          ["B", "61–70%", "Average"],
-          ["C+", "51–60%", "Satisfactory"],
-          ["C", "41–50%", "Fair"],
-          ["D", "31–40%", "Poor"],
-        ],
-      },
-      {
-        type: "h2",
-        text: "Pass percentage",
-      },
-      {
-        type: "p",
-        text: "Up to Class VIII: not less than 40% in each subject and 45% aggregate. A student failing in one or two subjects may be granted promotion if they have at least 30% in each failed subject and 35% aggregate.",
-      },
-      {
-        type: "p",
-        text: "Class IX and XI: not less than 35% in each subject and 40% aggregate. Promotion to Class XII requires a pass in both theory and practical in Class XI, separately.",
-      },
+    ],
+  },
+  mpd: {
+    eyebrow: "Know us",
+    title: "Mandatory public disclosure",
+    lead: "Official disclosure documents will be published soon.",
+    blocks: [
       {
         type: "note",
-        text: "This SOP is subject to revision to incorporate changing requirements and government guidelines.",
+        text: "Mandatory public disclosure details will be added here shortly. Please check back later, or contact the school office for affiliation and infrastructure information.",
       },
     ],
   },
   tours: {
     eyebrow: "Beyond academics",
     title: "Study tours",
-    lead: "Learning that leaves the classroom on purpose.",
+    lead: "The world becomes the classroom — carefully planned, safely led.",
     blocks: [
       {
         type: "p",
-        text: "Study tours are an integral part of the educational approach, providing valuable opportunities to learn beyond the classroom. Tours are organised to complement the curriculum, allowing students to explore real-world applications of their studies.",
+        text: "At GD Goenka Kupwara, study tours are planned as focused learning journeys, not day trips for their own sake. Each outing is chosen to deepen what students are already exploring in class — history that can be walked through, science that can be observed up close, and industries that show how ideas become work.",
       },
       {
         type: "p",
-        text: "By visiting museums, historical sites, nature reserves and various industries, students gain firsthand experience. Tours also encourage critical thinking, curiosity and social interaction — broadening horizons and making learning more engaging.",
+        text: "Students travel with teachers who prepare them beforehand and guide reflection afterwards. They learn to ask better questions, notice detail, and work as a group away from the familiar rhythm of the timetable.",
+      },
+      {
+        type: "h2",
+        text: "What students take away",
+      },
+      {
+        type: "list",
+        items: [
+          "Stronger links between classroom topics and real places",
+          "Confidence in new settings, with clear safety and supervision",
+          "Curiosity, observation skills and respectful public behaviour",
+          "Shared memories that build class spirit and belonging",
+        ],
+      },
+      {
+        type: "p",
+        text: "Destinations and dates are shared with families in advance, with attention to age group, distance and learning goals. For the latest schedule, please check school circulars or speak with the class teacher.",
       },
     ],
   },
   celebrations: {
     eyebrow: "Beyond academics",
     title: "Celebrations",
-    lead: "Culture, calendar and community — lived together.",
+    lead: "Moments that teach belonging, culture and joy.",
     blocks: [
       {
         type: "p",
-        text: "Celebrations are a vibrant part of school culture, bringing together students, teachers and staff to honour occasions throughout the year. National holidays, cultural festivals, school anniversaries and birthdays are marked with enthusiasm.",
+        text: "Celebration is part of how a school remembers who it is. Across the year, GD Goenka Kupwara gathers students and staff for national days, cultural festivals, house events and school milestones — occasions that turn the campus into a shared stage of music, colour and conversation.",
       },
       {
         type: "p",
-        text: "Each celebration is an opportunity to learn about traditions, express creativity and foster community. Cultural performances, music, dance and art allow students to showcase talent and appreciate diverse backgrounds — building unity, respect and belonging.",
+        text: "These days are designed with purpose. Younger children discover stories, songs and simple rituals; older students plan, perform and lead. Everyone learns that tradition can be honoured with warmth, and that difference can be welcomed without losing one’s own roots.",
+      },
+      {
+        type: "h2",
+        text: "How we celebrate",
+      },
+      {
+        type: "list",
+        items: [
+          "Assemblies and performances that give every child a chance to participate",
+          "Cultural programmes that introduce regional and national traditions with care",
+          "House and class events that build teamwork beyond the classroom",
+          "Community moments that bring parents into the life of the school",
+        ],
+      },
+      {
+        type: "p",
+        text: "Above all, celebrations here are about presence — being together, noticing each other, and leaving the day with a clearer sense of school spirit.",
       },
     ],
   },
   sports: {
     eyebrow: "Beyond academics",
     title: "Sports",
-    lead: "Fitness, teamwork, discipline — and swimming as a life skill.",
+    lead: "Strong bodies, steady minds, and the habit of fair play.",
     blocks: [
       {
         type: "p",
-        text: "Sports are an essential part of school life, offering a wide range of activities that promote physical fitness, teamwork and discipline. The programme includes football, basketball, cricket and athletics, ensuring many opportunities to engage.",
+        text: "Sport at GD Goenka Kupwara is treated as essential schooling — not an afterthought. Regular practice builds stamina, focus and resilience, while matches teach students to compete hard, lose well and support a teammate under pressure.",
       },
       {
         type: "p",
-        text: "A highlight is swimming — not only a joy but an important life skill. The school’s swimming pool gives students the chance to learn and excel under trained instructors. Through sport, students develop healthy competition, perseverance and confidence.",
+        text: "The campus is equipped for both everyday play and structured coaching. From early years movement games to competitive school teams, every age group has a clear path into activity that feels energetic, safe and inclusive.",
+      },
+      {
+        type: "h2",
+        text: "On the field and in the pool",
       },
       {
         type: "list",
         items: [
-          "Athletics — track and field",
-          "Basketball, football, cricket, volleyball",
-          "Badminton, table tennis, lawn tennis",
-          "Swimming, skating, splash pool, sand pit and outdoor play",
+          "Team sports — football, basketball, volleyball and cricket",
+          "Racquet games — badminton, table tennis and lawn tennis",
+          "Athletics and fitness for speed, strength and endurance",
+          "Swimming as both recreation and a vital life skill",
+          "Age-appropriate play spaces for the youngest learners",
         ],
+      },
+      {
+        type: "p",
+        text: "Trained instructors and PE faculty guide technique, warm-ups and safety. The aim is simple: students who leave school fitter in body, steadier in character, and ready to keep moving through life.",
       },
     ],
   },
@@ -456,86 +373,66 @@ export const pages: Record<string, PageContent> = {
   holistic: {
     eyebrow: "Facilities",
     title: "Holistic development",
-    lead: "Mind, body, craft and character — in the same week.",
+    lead: "Growing the whole child — mind, body, voice and values.",
     blocks: [
       {
-        type: "h3",
-        text: "Co-scholastic activities",
+        type: "p",
+        text: "Academic success matters at GD Goenka Kupwara, but it is never the only measure. Holistic development means every student has room to try, fail, practise and shine — in arts, sport, conversation and character — within the same school week.",
       },
       {
         type: "p",
-        text: "Dance, drama, music, art and craft, group discussions and debate, elocution, exhibitions, photography and cultural events.",
+        text: "Programmes are age-aware and teacher-guided. Younger children explore through play, rhythm and simple craft. Older students take on performance, debate, leadership roles and longer projects that ask for discipline as well as imagination.",
       },
       {
-        type: "h3",
-        text: "Career counselling",
+        type: "h2",
+        text: "What this looks like",
       },
       {
-        type: "p",
-        text: "Sessions by educators and renowned career counsellors to guide appropriate options.",
-      },
-      {
-        type: "h3",
-        text: "Physical education",
-      },
-      {
-        type: "p",
-        text: "Basketball, football, cricket, indoor badminton, volleyball, table tennis and swimming.",
-      },
-      {
-        type: "h3",
-        text: "Excursion",
+        type: "list",
+        items: [
+          "Creative expression through music, dance, drama, art and craft",
+          "Spoken confidence via discussion, debate and elocution",
+          "Physical growth through games, fitness and structured PE",
+          "Guidance conversations that help students think about future pathways",
+          "Value-led learning that builds respect, empathy and responsibility",
+        ],
       },
       {
         type: "p",
-        text: "Trips for leisure, education or physical purpose — extending the classroom.",
-      },
-      {
-        type: "h3",
-        text: "Value-based and skill-based learning",
-      },
-      {
-        type: "p",
-        text: "Virtuous, ethical citizenship, and practical skills that complement academic knowledge.",
+        text: "The goal is a balanced Goenkan: curious in class, capable on the field or stage, and steady in how they treat others.",
       },
     ],
   },
   transport: {
     eyebrow: "Facilities",
     title: "Transport",
-    lead: "GPS, CCTV and a female attendant on every bus.",
+    lead: "Safe routes home — planned, monitored and attended.",
     blocks: [
       {
         type: "p",
-        text: "The school offers comfortable buses on major routes in Kupwara. Each bus is fitted with GPS and CCTV cameras. Security is carefully managed. Each bus has a female attendant to take care of the children.",
+        text: "School transport at GD Goenka Kupwara is organised so the journey feels as considered as the school day. Buses run on major local routes, with stops allotted according to the school’s route plan and seat availability.",
       },
-      { type: "h2", text: "Rules" },
+      {
+        type: "p",
+        text: "Safety is built into the service: vehicles are monitored, journeys are supervised, and each bus carries a female attendant to look after students from pickup to drop. Families receive clear guidance on timing, stops and how to raise a transport query with the office.",
+      },
+      {
+        type: "h2",
+        text: "For parents",
+      },
       {
         type: "list",
         items: [
-          "Routes are drawn after considering parental convenience; the school’s decision on routing, timing and pickup points is final. Students may not change buses to visit friends. Address or stop changes must be intimated in writing.",
-          "A clear calendar month’s notice is required to discontinue transport. Discontinuation in the fourth quarter is not permitted. Mid-session enrolment requires bus charges and security for the entire session.",
-          "Damage to bus fittings will be recovered from parents. Indiscipline may lead to debarment from the bus.",
-          "Transport is a privilege, subject to availability, and may be withdrawn at the discretion of Management.",
-          "Bus stops are allotted strictly as per the route plan. Confirm bus fare before registration.",
-          "If a child is escorted to or from a stop by a minor servant, the facility may be withdrawn for up to three months.",
+          "Confirm your route, stop and fare with the transport desk before registering",
+          "Share address or stop changes in writing so routes stay accurate",
+          "Students should use only their allotted bus — switches for visits to friends are not allowed",
+          "Give a full calendar month’s notice if you need to discontinue the service",
+          "Help children practise calm boarding, respectful behaviour and seat discipline",
         ],
       },
       {
         type: "note",
-        text: "For transport queries call 18008890880 or 9103854896.",
-      },
-    ],
-  },
-  infrastructure: {
-    eyebrow: "Facilities",
-    title: "Infrastructure",
-    lead: "Figures from the school’s mandatory public disclosure.",
-    blocks: [
-      {
-        type: "table",
-        headers: ["Particular", "Detail"],
-        rows: mpdInfrastructure,
+        text: "Transport is subject to availability and may be reviewed if safety or discipline is compromised. For route queries, call the school helpdesk.",
       },
     ],
   },
@@ -654,21 +551,6 @@ export const pages: Record<string, PageContent> = {
       },
     ],
   },
-  calendar: {
-    eyebrow: "Academics",
-    title: "Academic calendar",
-    lead: "The year, held in two terms — with weeks for science, culture, literature and the cosmos.",
-    blocks: [
-      {
-        type: "p",
-        text: "The school year is organised in two terms, with periodic tests, projects and term examinations as set out in Exam & Evaluation. Monthly thematic weeks — environment, literary, cultural, science, cosmic — give rhythm to the calendar.",
-      },
-      {
-        type: "p",
-        text: "The official calendar image is issued by the school each session. Confirm dates with the office and the ERP parent portal.",
-      },
-    ],
-  },
   privacy: {
     eyebrow: "Legal",
     title: "Privacy policy",
@@ -720,29 +602,6 @@ export const pages: Record<string, PageContent> = {
       {
         type: "p",
         text: "The school publishes an Android application package from its existing website. Download only from the official school domain.",
-      },
-    ],
-  },
-  mpd: {
-    eyebrow: "Know us",
-    title: "Mandatory public disclosure",
-    lead: "Affiliation, people, land and learning spaces — as filed.",
-    blocks: [
-      { type: "h2", text: "General information" },
-      {
-        type: "table",
-        headers: ["Information", "Details"],
-        rows: mpdGeneral,
-      },
-      { type: "h2", text: "Infrastructure" },
-      {
-        type: "table",
-        headers: ["Information", "Details"],
-        rows: mpdInfrastructure,
-      },
-      {
-        type: "p",
-        text: "Teacher–section ratio 1.5 : 1. Librarian: Ms. Huma Malik. Counsellor and wellness teacher: Ms. Sumaya Showkat, M.A. Psychology, PG Guidance & Counselling.",
       },
     ],
   },

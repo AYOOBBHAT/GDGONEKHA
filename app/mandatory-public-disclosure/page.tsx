@@ -4,7 +4,7 @@ import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
   "Mandatory Public Disclosure",
-  "CBSE affiliation 730129, school code 23786, infrastructure and staff details for GD Goenka Public School Kupwara.",
+  "Mandatory public disclosure for GD Goenka Public School Kupwara — coming soon.",
   "/mandatory-public-disclosure",
 );
 

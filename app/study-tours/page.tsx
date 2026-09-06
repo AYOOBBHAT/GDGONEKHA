@@ -4,7 +4,7 @@ import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
   "Study Tours",
-  "Study tours at GD Goenka Kupwara — museums, historical sites, nature reserves and industry visits.",
+  "Planned learning journeys beyond the classroom at GD Goenka Public School Kupwara.",
   "/study-tours",
 );
 

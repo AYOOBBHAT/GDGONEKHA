@@ -4,7 +4,7 @@ import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
   "Celebrations",
-  "Cultural festivals, national days and school celebrations at GD Goenka Public School Kupwara.",
+  "National days, cultural festivals and school gatherings at GD Goenka Public School Kupwara.",
   "/celebrations",
 );
 

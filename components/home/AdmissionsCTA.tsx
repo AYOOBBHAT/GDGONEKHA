@@ -1,5 +1,6 @@
 import { ButtonLink } from "@/components/ui/ButtonLink";
 import { Reveal } from "@/components/ui/Reveal";
+import { admissionWhatsAppHref } from "@/lib/whatsapp";
 
 export function AdmissionsCTA() {
   return (
@@ -23,7 +24,7 @@ export function AdmissionsCTA() {
             integrity, energy and curiosity.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <ButtonLink href="/admissions/apply" variant="gold">
+            <ButtonLink href={admissionWhatsAppHref} external variant="gold">
               Apply Now
             </ButtonLink>
             <ButtonLink href="/admissions/procedure" variant="light">

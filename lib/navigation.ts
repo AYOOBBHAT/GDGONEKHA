@@ -17,11 +17,9 @@ export const mainNav: NavItem[] = [
     href: "/about",
     children: [
       { label: "Our Founder", href: "/founder" },
-      { label: "The School / Institution", href: "/about" },
+      { label: "The School", href: "/about" },
       { label: "Vision & Mission", href: "/vision-mission" },
       { label: "School Song", href: "/school-song" },
-      { label: "Management", href: "/management" },
-      { label: "Parent Teacher Body", href: "/parent-teacher-body" },
       { label: "Mandatory Public Disclosure", href: "/mandatory-public-disclosure" },
       { label: "Our Team", href: "/team" },
       { label: "Principal's Message", href: "/principal-message" },
@@ -32,10 +30,8 @@ export const mainNav: NavItem[] = [
     label: "Academics",
     href: "/academics",
     children: [
-      { label: "Curriculum", href: "/curriculum" },
       { label: "Teaching Methodology", href: "/teaching-methodology" },
       { label: "Academic Calendar", href: "/academic-calendar" },
-      { label: "Exam & Evaluation", href: "/exam-evaluation" },
       { label: "Book List", href: "/book-list" },
     ],
   },
@@ -58,7 +54,6 @@ export const mainNav: NavItem[] = [
       { label: "State of the Art", href: "/facilities/state-of-the-art" },
       { label: "Holistic Development", href: "/facilities/holistic-development" },
       { label: "Transport", href: "/facilities/transport" },
-      { label: "Infrastructure", href: "/facilities/infrastructure" },
     ],
   },
   {
@@ -82,8 +77,6 @@ export const mainNav: NavItem[] = [
       { label: "FAQs", href: "/admissions/faq" },
       { label: "E-Prospectus", href: "/admissions/prospectus" },
       { label: "Apply Now", href: "/admissions/apply" },
-      { label: "Fee Structure", href: "/admissions/fee-structure" },
-      { label: "Withdrawal / TC Details", href: "/admissions/withdrawal" },
     ],
   },
   {
@@ -116,17 +109,14 @@ export const footerNav = {
     { label: "Mandatory Disclosure", href: "/mandatory-public-disclosure" },
   ],
   academics: [
-    { label: "Curriculum", href: "/curriculum" },
     { label: "Teaching Methodology", href: "/teaching-methodology" },
     { label: "Academic Calendar", href: "/academic-calendar" },
-    { label: "Exam & Evaluation", href: "/exam-evaluation" },
     { label: "Book List", href: "/book-list" },
   ],
   admissions: [
     { label: "Procedure", href: "/admissions/procedure" },
     { label: "FAQs", href: "/admissions/faq" },
     { label: "Apply Now", href: "/admissions/apply" },
-    { label: "Fee Structure", href: "/admissions/fee-structure" },
     { label: "E-Prospectus", href: "/admissions/prospectus" },
   ],
   resources: [

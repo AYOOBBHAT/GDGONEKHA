@@ -4,7 +4,7 @@ import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
   "Holistic Development",
-  "Co-scholastic activities, counselling, physical education and value-based learning at GD Goenka Kupwara.",
+  "Arts, sport, guidance and values — whole-child growth at GD Goenka Public School Kupwara.",
   "/facilities/holistic-development",
 );
 

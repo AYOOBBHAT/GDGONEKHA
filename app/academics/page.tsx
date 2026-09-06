@@ -5,7 +5,7 @@ import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
   "Academics",
-  "CBSE curriculum, teaching methodology, calendar, evaluation and book list at GD Goenka Public School Kupwara.",
+  "Teaching methodology, academic calendar and book list at GD Goenka Public School Kupwara.",
   "/academics",
 );
 
@@ -13,12 +13,12 @@ export default function Page() {
   return (
     <InnerPage content={pages.academics}>
       <div className="mt-10 flex flex-wrap gap-3">
-        <ButtonLink href="/curriculum">Curriculum</ButtonLink>
-        <ButtonLink href="/teaching-methodology" variant="secondary">
-          Teaching methodology
+        <ButtonLink href="/teaching-methodology">Teaching methodology</ButtonLink>
+        <ButtonLink href="/academic-calendar" variant="secondary">
+          Academic calendar
         </ButtonLink>
-        <ButtonLink href="/exam-evaluation" variant="secondary">
-          Exam & evaluation
+        <ButtonLink href="/book-list" variant="secondary">
+          Book list
         </ButtonLink>
       </div>
     </InnerPage>

@@ -19,14 +19,12 @@ export function PrincipalMessage() {
         <Reveal delay={0.1} className="lg:col-span-7">
           <p className="eyebrow">A message from the Principal</p>
           <h2 className="mt-4 max-w-[16ch] text-4xl font-semibold leading-[1.1] tracking-[-0.04em] md:text-5xl">
-            Education is about more than achievement.
+            Leadership that puts every child first.
           </h2>
           <p className="mt-6 max-w-xl text-muted">
-            Whatever guides a person closer to truth is education. Knowledge
-            that teaches only how to earn a livelihood is incomplete; knowledge
-            that imparts wisdom and enriches life is true knowledge. Students
-            will not be defined by medals, but by confidence, communication,
-            trust and belief in their abilities.
+            The Principal’s full message will be published here soon. Until then,
+            reach the school office for guidance, or explore Know Us for more
+            about our vision and campus.
           </p>
           <p className="mt-6 text-sm font-medium">
             {site.people.principal}
@@ -35,7 +33,7 @@ export function PrincipalMessage() {
             </span>
           </p>
           <ButtonLink href="/principal-message" variant="ghost" className="mt-6">
-            Read Principal&apos;s Message →
+            Principal&apos;s Message →
           </ButtonLink>
         </Reveal>
       </div>

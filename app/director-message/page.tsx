@@ -4,7 +4,7 @@ import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
   "Director's Message",
-  "Director Raja Zubair Ahmed on opportunity, innovation and the learning environment at GD Goenka Kupwara.",
+  "A message from the Director of GD Goenka Public School Kupwara — coming soon.",
   "/director-message",
 );
 

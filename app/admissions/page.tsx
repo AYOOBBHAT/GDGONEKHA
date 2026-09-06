@@ -5,7 +5,7 @@ import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
   "Admissions",
-  "Admissions 2026–27 at GD Goenka Public School Kupwara — procedure, FAQs, fees and apply now.",
+  "Admissions 2026–27 at GD Goenka Public School Kupwara — procedure, FAQs and apply now.",
   "/admissions",
 );
 

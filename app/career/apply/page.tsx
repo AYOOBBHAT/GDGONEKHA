@@ -15,7 +15,7 @@ export default function Page() {
       <PageHero
         eyebrow="Career"
         title="Apply online"
-        lead="Tell us the role. Email your CV to info@gdgoenkabaramulla.com as well — this form is an enquiry."
+        lead="Share your details and the role you want — WhatsApp will open with your application ready to send to the school."
       />
       <Container className="py-10 md:py-16">
         <ApplyForm variant="career" />

@@ -24,6 +24,7 @@ export const site = {
   ],
   email: "info@gdgoenkabaramulla.com",
   whatsapp: "https://api.whatsapp.com/send?phone=919103854897",
+  whatsappPhone: "919103854897",
   social: {
     facebook:
       "https://www.facebook.com/people/GD-Goenka-Baramulla/100069904463512/",

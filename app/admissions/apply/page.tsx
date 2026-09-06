@@ -15,7 +15,7 @@ export default function Page() {
       <PageHero
         eyebrow="Admission"
         title="Apply now"
-        lead="Share an enquiry. The official registration is completed with the admissions desk, documents in hand."
+        lead="Fill in the details below and submit — WhatsApp will open with your enquiry ready to send to the school."
       />
       <Container className="py-10 md:py-16">
         <ApplyForm />

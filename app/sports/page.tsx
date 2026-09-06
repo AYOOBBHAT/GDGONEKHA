@@ -4,7 +4,7 @@ import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
   "Sports",
-  "Football, basketball, cricket, athletics and swimming at GD Goenka Public School Kupwara.",
+  "Team sports, athletics and swimming at GD Goenka Public School Kupwara.",
   "/sports",
 );
 

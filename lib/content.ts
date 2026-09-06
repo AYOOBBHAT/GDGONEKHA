@@ -17,14 +17,17 @@ export type PageContent = {
 export const schoolSongLyrics = [
   "Let the journey start with a song, to the land, which is far away.",
   "We'll climb the way to the mountain top, to reach our goal one day.",
-  "We'll float above the world, we'll breathe beneath the sky.",
+  "We'll float above the world, We'll breathe beneath the sky.",
   "With knowledge, wisdom, skill and hard work, Goenkans will find their way.",
   "Our eyes are on the stars; our feet are on the ground.",
-  "Whether sunny days or shades of grey, we pray to God every day.",
-  "Black and white keys on a piano, let's make music and play.",
+  "Whether sunny days or shades of grey, we pray to GOD everyday.",
+  "Black and white keys on a Piano, let's make music and play.",
   "With knowledge, wisdom, skill and hard work, Goenkans will find their way.",
-  "We go higher and higher, grow stronger and stronger, and get brighter and brighter.",
-  "We go higher and higher, grow stronger and stronger, get brighter day by day.",
+  "We go higher and higher........ grow stronger and stronger........ and get brighter and brighter..........",
+  "We go higher and higher, grow stronger and stronger, get brighter day by day…",
+  "With knowledge, wisdom, skill and hard work, Goenkans will find their way...",
+  "With knowledge, wisdom, skill and hard work, Goenkans will find their way...",
+  "With knowledge, wisdom, skill and hard work, Goenkans will find their way...",
 ];
 
 export const ageCriteria = [

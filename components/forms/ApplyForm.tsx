@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import { site } from "@/lib/site";
+import { whatsappUrl } from "@/lib/whatsapp";
 
 const classes = [
   "Nursery",
@@ -23,21 +25,59 @@ export function ApplyForm({
 
   function onSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    const form = event.currentTarget;
+    const data = new FormData(form);
+
+    const message =
+      variant === "admission"
+        ? [
+            `*Admission Enquiry — ${site.shortName}*`,
+            "",
+            `Student: ${String(data.get("student") || "").trim()}`,
+            `Class applying for: ${String(data.get("class") || "").trim()}`,
+            `Parent / guardian: ${String(data.get("parent") || "").trim()}`,
+            `Phone: ${String(data.get("phone") || "").trim()}`,
+            `Email: ${String(data.get("email") || "").trim()}`,
+            `Message: ${String(data.get("message") || "").trim() || "—"}`,
+          ].join("\n")
+        : [
+            `*Career Application — ${site.shortName}*`,
+            "",
+            `Name: ${String(data.get("name") || "").trim()}`,
+            `Position: ${String(data.get("role") || "").trim()}`,
+            `Phone: ${String(data.get("phone") || "").trim()}`,
+            `Email: ${String(data.get("email") || "").trim()}`,
+            `Message: ${String(data.get("message") || "").trim() || "—"}`,
+          ].join("\n");
+
+    window.open(whatsappUrl(message), "_blank", "noopener,noreferrer");
     setSent(true);
   }
 
   if (sent) {
     return (
       <div className="mt-10 max-w-xl rounded-3xl border border-line bg-white p-8">
-        <p className="text-2xl font-semibold tracking-tight">Received.</p>
+        <p className="text-2xl font-semibold tracking-tight">Opening WhatsApp…</p>
         <p className="mt-3 text-muted">
-          This proposal form stays on your device. Please complete the official
-          application with the school office or email{" "}
-          <a href="mailto:info@gdgoenkabaramulla.com">
-            info@gdgoenkabaramulla.com
+          Your enquiry has been prepared. Send the WhatsApp message to complete
+          your submission. If WhatsApp did not open,{" "}
+          <a
+            href={site.whatsapp}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-medium text-ink underline underline-offset-2"
+          >
+            tap here to chat with the school
           </a>
-          , and call 18008890880.
+          .
         </p>
+        <button
+          type="button"
+          className="mt-6 text-sm font-medium text-ink underline underline-offset-2"
+          onClick={() => setSent(false)}
+        >
+          Submit another enquiry
+        </button>
       </div>
     );
   }
@@ -81,10 +121,11 @@ export function ApplyForm({
         type="submit"
         className="rounded-full bg-ink px-6 py-3 text-sm font-medium text-cream transition hover:-translate-y-0.5"
       >
-        Submit enquiry
+        {variant === "admission" ? "Submit enquiry on WhatsApp" : "Apply via WhatsApp"}
       </button>
       <p className="text-xs text-muted">
-        Official processing is completed by the school admissions or HR desk.
+        Clicking submit opens WhatsApp with your details ready to send to the
+        school.
       </p>
     </form>
   );

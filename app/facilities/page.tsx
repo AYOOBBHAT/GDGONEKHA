@@ -5,7 +5,7 @@ import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
   "Facilities",
-  "State-of-the-art campus facilities at GD Goenka Public School Kupwara — pool, auditorium, labs and sports.",
+  "Campus facilities at GD Goenka Public School Kupwara — state of the art spaces, holistic programmes and transport.",
   "/facilities",
 );
 
@@ -19,9 +19,6 @@ export default function Page() {
         </ButtonLink>
         <ButtonLink href="/facilities/transport" variant="secondary">
           Transport
-        </ButtonLink>
-        <ButtonLink href="/facilities/infrastructure" variant="secondary">
-          Infrastructure
         </ButtonLink>
       </div>
     </InnerPage>

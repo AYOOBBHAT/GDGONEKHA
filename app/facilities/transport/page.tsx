@@ -4,7 +4,7 @@ import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
   "Transport",
-  "GPS and CCTV school buses with female attendants on major Kupwara routes.",
+  "Safe, attended school bus routes for GD Goenka Public School Kupwara families.",
   "/facilities/transport",
 );
 
