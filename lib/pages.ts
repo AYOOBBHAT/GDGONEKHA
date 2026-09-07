@@ -164,11 +164,11 @@ export const pages: Record<string, PageContent> = {
   mpd: {
     eyebrow: "Know us",
     title: "Mandatory public disclosure",
-    lead: "Official disclosure documents will be published soon.",
+    lead: "Official documents and information published for transparency.",
     blocks: [
       {
-        type: "note",
-        text: "Mandatory public disclosure details will be added here shortly. Please check back later, or contact the school office for affiliation and infrastructure information.",
+        type: "p",
+        text: "View the complete Mandatory Public Disclosure page for general information, certificates, and academic documents.",
       },
     ],
   },

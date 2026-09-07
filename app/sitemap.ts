@@ -7,7 +7,7 @@ const routes = [
   "/founder",
   "/vision-mission",
   "/school-song",
-  "/mandatory-public-disclosure",
+  "/know-us/mandatory-disclosure",
   "/team",
   "/principal-message",
   "/director-message",
