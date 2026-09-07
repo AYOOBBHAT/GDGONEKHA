@@ -93,15 +93,15 @@ export function Footer() {
           <Column title="Resources" links={footerNav.resources} />
           <p className="eyebrow mt-8 mb-4 text-gold-dark">Contact</p>
           <address className="text-sm not-italic leading-relaxed text-muted">
-            Kupwara
+            {site.address.line1}
             <br />
-            Jammu & Kashmir
+            {site.address.line2}
             <br />
             <a
-              href="tel:18008890880"
+              href={site.phones[0].href}
               className="mt-2 inline-flex min-h-11 items-center transition hover:text-ink"
             >
-              18008890880
+              {site.phones[0].value}
             </a>
             <br />
             <a

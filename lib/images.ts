@@ -1,6 +1,9 @@
 const origin = "https://www.gdgoenkabaramulla.com";
 
 export const images = {
+  /** Official GD Goenka lockup (falcon + wordmark + Thrive. For Life.) */
+  brandLogo: "/images/brand/gd-goenka-logo.svg",
+  brandFooterLogo: "/images/brand/gd-goenka-footer.svg",
   logo: `${origin}/images/newone.png`,
   logoMark: `${origin}/img/LOGO.png`,
   footerMark: `${origin}/img/GDGoenkaSchool_footer.png`,

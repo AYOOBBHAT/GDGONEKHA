@@ -56,7 +56,7 @@ export function TeamDirectory() {
       </ul>
       <p className="mt-8 max-w-2xl text-sm text-muted">
         A dedicated transport, housekeeping and care team supports every school
-        day. Transport queries: 18008890880 / 9103854896.
+        day. Transport queries: 7020169259.
       </p>
     </div>
   );

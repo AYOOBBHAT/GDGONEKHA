@@ -43,7 +43,10 @@ export function ContactSection() {
             </div>
           </div>
           <div className="mt-8 flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:flex-wrap">
-            <ButtonLink href="tel:18008890880" className="w-full justify-center sm:w-auto">
+            <ButtonLink
+              href={site.phones[0].href}
+              className="w-full justify-center sm:w-auto"
+            >
               <Phone size={16} /> Call
             </ButtonLink>
             <ButtonLink

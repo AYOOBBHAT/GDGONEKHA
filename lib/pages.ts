@@ -80,7 +80,7 @@ export const pages: Record<string, PageContent> = {
       },
       {
         type: "p",
-        text: "The school motto HIGHER STRONGER BRIGHTER takes its core idea from a quest for excellence, an insatiable thirst for knowledge and a limitless craving for the latest.",
+        text: "The brand essence Thrive. For Life. takes its core idea from a quest for excellence, an insatiable thirst for knowledge and a limitless craving for the latest.",
       },
       {
         type: "p",
@@ -521,7 +521,7 @@ export const pages: Record<string, PageContent> = {
     blocks: [
       {
         type: "p",
-        text: "The official e-prospectus is published by the school. For the latest file, use the prospectus link on the existing school portal, or request a copy from the admissions desk at info@gdgoenkabaramulla.com.",
+        text: "The official e-prospectus is published by the school. For the latest file, use the prospectus link on the existing school portal, or request a copy from the admissions desk at principalgdgkupwara1@gmail.com.",
       },
     ],
   },
@@ -577,7 +577,7 @@ export const pages: Record<string, PageContent> = {
       },
       {
         type: "p",
-        text: "18008890880, 9103854896, 9103854897. Transport queries: 18008890880, 9103854896.",
+        text: "School helpdesk: 7020169259. For admissions and transport queries, call the school office or write to principalgdgkupwara1@gmail.com.",
       },
       {
         type: "h2",

@@ -10,7 +10,7 @@ export function AdmissionsCTA() {
           className="pointer-events-none absolute inset-0 opacity-[0.18]"
           style={{
             background:
-              "radial-gradient(circle at 80% 20%, #C9A227 0%, transparent 42%)",
+              "radial-gradient(circle at 80% 20%, #b39759 0%, transparent 42%)",
           }}
         />
         <Reveal className="relative max-w-3xl">

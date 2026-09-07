@@ -4,7 +4,7 @@ import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
   "Contact",
-  "Contact GD Goenka Public School Kupwara in Jammu & Kashmir. Phone 18008890880.",
+  "Contact GD Goenka Public School Kupwara in Jammu & Kashmir. Phone 7020169259.",
   "/contact",
 );
 

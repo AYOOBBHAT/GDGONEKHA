@@ -7,8 +7,11 @@
   --color-ink: #111111;
   --color-muted: #66645f;
   --color-line: #dcdad3;
-  --color-gold: #c9a227;
-  --color-gold-dark: #9c7c18;
+  /* Brand guidelines: Blue #123985, Gold #b39759, Grey #333333 */
+  --color-brand-blue: #123985;
+  --color-gold: #b39759;
+  --color-gold-dark: #9a8048;
+  --color-brand-grey: #333333;
   --color-ink-deep: #0b0b0b;
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --shadow-soft: 0 12px 40px rgba(17, 17, 17, 0.06);

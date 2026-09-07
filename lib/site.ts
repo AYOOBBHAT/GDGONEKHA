@@ -1,16 +1,18 @@
 export const site = {
   name: "GD Goenka Public School Kupwara",
   shortName: "GD Goenka Kupwara",
-  motto: "Higher Stronger Brighter",
+  motto: "Thrive. For Life.",
+  brandTagline: "Thrive. For Life.",
   tagline: "Education that prepares them to thrive.",
+  logoLocation: "Kupwara",
   description:
     "GD Goenka Public School Kupwara is a CBSE school in Kupwara, Jammu & Kashmir, offering a globally acknowledged, activity-based curriculum with state-of-the-art infrastructure.",
   url: "https://www.gdgoenkabaramulla.com",
-  affiliation: "730129",
-  schoolCode: "23786",
+  affiliation: "---",
+  schoolCode: "---",
   trust: "Symphony Educational Trust",
   address: {
-    line1: "Kupwara",
+    line1: "Bypass Road, Handwara, Kupwara",
     line2: "Jammu & Kashmir",
     region: "Jammu & Kashmir",
     mapsQuery: "GD Goenka Public School Kupwara",
@@ -18,13 +20,11 @@ export const site = {
       "https://maps.google.com/maps?q=GD%20Goenka%20Public%20School%20Kupwara&t=&z=15&ie=UTF8&iwloc=&output=embed",
   },
   phones: [
-    { label: "Reception", value: "18008890880", href: "tel:18008890880" },
-    { label: "Campus", value: "9103854896", href: "tel:9103854896" },
-    { label: "Campus", value: "9103854897", href: "tel:9103854897" },
+    { label: "School", value: "7020169259", href: "tel:7020169259" },
   ],
-  email: "info@gdgoenkabaramulla.com",
-  whatsapp: "https://api.whatsapp.com/send?phone=919103854897",
-  whatsappPhone: "919103854897",
+  email: "principalgdgkupwara1@gmail.com",
+  whatsapp: "https://api.whatsapp.com/send?phone=917020169259",
+  whatsappPhone: "917020169259",
   social: {
     facebook:
       "https://www.facebook.com/people/GD-Goenka-Baramulla/100069904463512/",
@@ -55,7 +55,7 @@ export const site = {
     founderTitle: "Chairman, GD Goenka Group",
     director: "Raja Zubair Ahmed",
     directorTitle: "Director",
-    principal: "Sartaj Mir",
+    principal: "Mrs Jasmine Rafiq Mir",
     principalTitle: "Principal, GD Goenka Public School Kupwara",
   },
 } as const;

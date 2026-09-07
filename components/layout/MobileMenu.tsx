@@ -97,10 +97,10 @@ export function MobileMenu({
         </ul>
         <div className="mt-8 space-y-1 border-t border-line pt-6 text-sm">
           <a
-            href="tel:18008890880"
+            href={site.phones[0].href}
             className="flex min-h-11 items-center rounded-xl px-3 text-muted"
           >
-            18008890880
+            {site.phones[0].value}
           </a>
           <a
             href={`mailto:${site.email}`}
