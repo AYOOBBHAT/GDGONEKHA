@@ -8,7 +8,7 @@ export const site = {
   url: "https://www.gdgoenkabaramulla.com",
   affiliation: "730129",
   schoolCode: "23786",
-  trust: "Anwar Sultana Charitable Trust",
+  trust: "Symphony Educational Trust",
   address: {
     line1: "Kupwara",
     line2: "Jammu & Kashmir",

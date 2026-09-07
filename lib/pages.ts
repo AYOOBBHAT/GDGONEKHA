@@ -12,7 +12,7 @@ export const pages: Record<string, PageContent> = {
     blocks: [
       {
         type: "p",
-        text: "G D Goenka Kupwara is an endeavour of Anwar Sultana Charitable Trust. It is an initiative to impart quality education in an environment, which is caring, stimulating, and challenging. The school has an ultramodern architecture with state-of-the-art technology. The school rises above the confines of conventional teaching.",
+        text: "G D Goenka Kupwara is an endeavour of Symphony Educational Trust. It is an initiative to impart quality education in an environment, which is caring, stimulating, and challenging. The school has an ultramodern architecture with state-of-the-art technology. The school rises above the confines of conventional teaching.",
       },
       {
         type: "p",

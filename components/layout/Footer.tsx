@@ -53,7 +53,7 @@ export function Footer() {
         <div className="lg:col-span-2">
           <Logo />
           <p className="mt-5 max-w-sm text-sm leading-relaxed text-muted">
-            An endeavour of Anwar Sultana Charitable Trust. A CBSE school in
+            An endeavour of Symphony Educational Trust. A CBSE school in
             Kupwara — educating children to thrive, for life.
           </p>
           <div className="mt-6 flex gap-3">
