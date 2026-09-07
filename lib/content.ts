@@ -46,15 +46,13 @@ export const ageCriteria = [
 
 export const mpdGeneral = [
   ["Name of the school", "G.D. Goenka Public School Kupwara"],
-  ["Affiliation no.", "730129"],
-  ["School code", "23786"],
-  ["Address", "Kupwara, Jammu & Kashmir"],
-  [
-    "Principal",
-    "Mr. Sartaj Ahmad Mir — M.A. Public Administration, M.A. Political Science, B.Ed., PG Diploma in Guidance & Counselling, PGDCA",
-  ],
-  ["Email", "info@gdgoenkabaramulla.com"],
-  ["Contact", "9103854895 / 9103854896"],
+  ["Affiliation no.", "---"],
+  ["School code", "---"],
+  ["Address", "Bypass Road, Handwara, Kupwara"],
+  ["Principal", "Mrs Jasmine Rafiq Mir"],
+  ["Qualification", "M.A B.Ed/ DSM"],
+  ["E-mail", "principalgdgkupwara1@gmail.com"],
+  ["Contact", "7020169259"],
 ];
 
 export const mpdInfrastructure = [
