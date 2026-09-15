@@ -7,7 +7,6 @@ import { Logo } from "@/components/layout/Logo";
 import { mainNav } from "@/lib/navigation";
 import { site } from "@/lib/site";
 import { cn } from "@/lib/cn";
-import { admissionWhatsAppHref } from "@/lib/whatsapp";
 
 export function MobileMenu({
   open,
@@ -117,15 +116,13 @@ export function MobileMenu({
             Online Fee Payment
           </a>
         </div>
-        <a
-          href={admissionWhatsAppHref}
-          target="_blank"
-          rel="noopener noreferrer"
+        <Link
+          href="/admissions/apply"
           className="mt-6 mb-2 inline-flex min-h-12 w-full items-center justify-center rounded-full bg-ink px-5 py-3.5 text-base font-medium text-cream"
           onClick={onClose}
         >
           Apply Now
-        </a>
+        </Link>
       </div>
     </div>
   );

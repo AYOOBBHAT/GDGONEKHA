@@ -4,7 +4,6 @@ import { motion, useReducedMotion } from "motion/react";
 import Image from "next/image";
 import { ButtonLink } from "@/components/ui/ButtonLink";
 import { images } from "@/lib/images";
-import { admissionWhatsAppHref } from "@/lib/whatsapp";
 
 export function Hero() {
   const reduce = useReducedMotion();
@@ -65,8 +64,7 @@ export function Hero() {
               Explore Our School
             </ButtonLink>
             <ButtonLink
-              href={admissionWhatsAppHref}
-              external
+              href="/admissions/apply"
               variant="secondary"
               className="w-full justify-center sm:w-auto"
             >

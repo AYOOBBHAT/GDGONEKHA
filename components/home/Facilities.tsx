@@ -2,7 +2,6 @@ import Link from "next/link";
 import { Reveal } from "@/components/ui/Reveal";
 import { SchoolImage } from "@/components/ui/SchoolImage";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { ImagePlaceholder } from "@/components/ui/ImagePlaceholder";
 import { images } from "@/lib/images";
 
 const tiles = [
@@ -30,12 +29,6 @@ const tiles = [
     image: images.gallery.sports1,
     className: "min-h-[200px] sm:min-h-[240px]",
   },
-  {
-    title: "Swimming pool",
-    caption: "Semi-Olympic pool with trained instructors",
-    image: null,
-    className: "min-h-[200px] sm:min-h-[240px]",
-  },
 ];
 
 export function Facilities() {
@@ -57,20 +50,13 @@ export function Facilities() {
               className={tile.className}
             >
               <figure className="group relative h-full min-h-[240px] overflow-hidden rounded-[1.6rem]">
-                {tile.image ? (
-                  <SchoolImage
-                    src={tile.image}
-                    alt={tile.caption}
-                    className="absolute inset-0 h-full w-full"
-                    zoom
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                  />
-                ) : (
-                  <ImagePlaceholder
-                    label={tile.title}
-                    className="absolute inset-0 h-full w-full"
-                  />
-                )}
+                <SchoolImage
+                  src={tile.image}
+                  alt={tile.caption}
+                  className="absolute inset-0 h-full w-full"
+                  zoom
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
                 <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-5 text-cream">
                   <p className="text-lg font-semibold tracking-tight">
                     {tile.title}

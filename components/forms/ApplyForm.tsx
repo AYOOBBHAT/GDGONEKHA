@@ -14,6 +14,8 @@ const classes = [
   "Class 4",
   "Class 5",
   "Class 6",
+  "Class 7",
+  "Class 8",
 ];
 
 export function ApplyForm({
@@ -21,7 +23,7 @@ export function ApplyForm({
 }: {
   variant?: "admission" | "career";
 }) {
-  const [sent, setSent] = useState(false);
+  const [sentUrl, setSentUrl] = useState<string | null>(null);
 
   function onSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -50,19 +52,21 @@ export function ApplyForm({
             `Message: ${String(data.get("message") || "").trim() || "—"}`,
           ].join("\n");
 
-    window.open(whatsappUrl(message), "_blank", "noopener,noreferrer");
-    setSent(true);
+    const url = whatsappUrl(message);
+    window.open(url, "_blank", "noopener,noreferrer");
+    setSentUrl(url);
   }
 
-  if (sent) {
+  if (sentUrl) {
     return (
       <div className="mt-10 max-w-xl rounded-3xl border border-line bg-white p-8">
         <p className="text-2xl font-semibold tracking-tight">Opening WhatsApp…</p>
         <p className="mt-3 text-muted">
-          Your enquiry has been prepared. Send the WhatsApp message to complete
-          your submission. If WhatsApp did not open,{" "}
+          Your enquiry has been prepared with the details you entered. Send the
+          WhatsApp message to complete your submission. If WhatsApp did not
+          open,{" "}
           <a
-            href={site.whatsapp}
+            href={sentUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="font-medium text-ink underline underline-offset-2"
@@ -74,7 +78,7 @@ export function ApplyForm({
         <button
           type="button"
           className="mt-6 text-sm font-medium text-ink underline underline-offset-2"
-          onClick={() => setSent(false)}
+          onClick={() => setSentUrl(null)}
         >
           Submit another enquiry
         </button>
