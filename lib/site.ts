@@ -26,9 +26,8 @@ export const site = {
   whatsapp: "https://api.whatsapp.com/send?phone=917020169259",
   whatsappPhone: "917020169259",
   social: {
-    facebook:
-      "https://www.facebook.com/people/GD-Goenka-Baramulla/100069904463512/",
-    instagram: "https://www.instagram.com/gdgoenkabaramulla",
+    facebook: "https://www.facebook.com/G.DGoenkaKupwara",
+    instagram: "https://www.instagram.com/gdgoenka.kupwara",
     youtube: "https://www.youtube.com/channel/UCDwiesK7cBcVNsfodfI4-Zg",
   },
   links: {

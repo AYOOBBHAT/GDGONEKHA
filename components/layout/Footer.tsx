@@ -3,7 +3,6 @@ import Link from "next/link";
 import {
   FacebookIcon,
   InstagramIcon,
-  YoutubeIcon,
 } from "@/components/ui/SocialIcons";
 import { Logo } from "@/components/layout/Logo";
 import { footerNav } from "@/lib/navigation";
@@ -49,10 +48,10 @@ function Column({
 export function Footer() {
   return (
     <footer className="border-t border-line bg-cream-2 text-ink">
-      <div className="container-site grid gap-10 py-12 sm:gap-12 sm:py-16 md:grid-cols-2 lg:grid-cols-6 lg:py-20">
-        <div className="lg:col-span-2">
+      <div className="container-site flex flex-col gap-10 py-12 sm:gap-12 sm:py-16 lg:flex-row lg:items-start lg:justify-between lg:py-20">
+        <div className="max-w-sm shrink-0">
           <Logo />
-          <p className="mt-5 max-w-sm text-sm leading-relaxed text-muted">
+          <p className="mt-5 text-sm leading-relaxed text-muted">
             An endeavour of Symphony Educational Trust. A CBSE school in
             Kupwara — educating children to thrive, for life.
           </p>
@@ -75,23 +74,16 @@ export function Footer() {
             >
               <InstagramIcon size={16} />
             </a>
-            <a
-              href={site.social.youtube}
-              aria-label="YouTube"
-              className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-line bg-cream text-ink transition hover:border-gold hover:text-gold-dark"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <YoutubeIcon size={16} />
-            </a>
           </div>
         </div>
-        <Column title="School" links={footerNav.school} />
-        <Column title="Academics" links={footerNav.academics} />
-        <Column title="Admissions" links={footerNav.admissions} />
-        <div>
+        <div className="grid flex-1 gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
+          <Column title="School" links={footerNav.school} />
+          <Column title="Academics" links={footerNav.academics} />
+          <Column title="Admissions" links={footerNav.admissions} />
           <Column title="Resources" links={footerNav.resources} />
-          <p className="eyebrow mt-8 mb-4 text-gold-dark">Contact</p>
+        </div>
+        <div className="shrink-0 lg:max-w-[16rem] lg:text-right">
+          <p className="eyebrow mb-4 text-gold-dark">Contact</p>
           <address className="text-sm not-italic leading-relaxed text-muted">
             {site.address.line1}
             <br />

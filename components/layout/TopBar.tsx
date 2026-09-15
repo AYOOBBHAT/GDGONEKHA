@@ -2,18 +2,12 @@ import { Mail, Phone } from "lucide-react";
 import {
   FacebookIcon,
   InstagramIcon,
-  LinkedInIcon,
-  XIcon,
-  YoutubeIcon,
 } from "@/components/ui/SocialIcons";
 import { site } from "@/lib/site";
 
 const social = [
   { href: site.social.facebook, label: "Facebook", Icon: FacebookIcon },
-  { href: "#", label: "X (Twitter)", Icon: XIcon },
   { href: site.social.instagram, label: "Instagram", Icon: InstagramIcon },
-  { href: "#", label: "LinkedIn", Icon: LinkedInIcon },
-  { href: site.social.youtube, label: "YouTube", Icon: YoutubeIcon },
 ];
 
 export function TopBar() {

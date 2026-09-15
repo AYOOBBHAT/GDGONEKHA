@@ -15,7 +15,7 @@ export function JsonLd() {
       addressRegion: "Jammu and Kashmir",
       addressCountry: "IN",
     },
-    sameAs: [site.social.facebook, site.social.instagram, site.social.youtube],
+    sameAs: [site.social.facebook, site.social.instagram],
   };
 
   return (
