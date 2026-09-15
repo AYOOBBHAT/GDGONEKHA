@@ -45,13 +45,13 @@ export const ageCriteria = [
 ];
 
 export const mpdGeneral = [
-  ["Name of the school", "G.D. Goenka Public School Kupwara"],
+  ["Name of the school", "G.D. GOENKA PUBLIC SCHOOL KUPWARA"],
   ["Affiliation no.", "---"],
   ["School code", "---"],
-  ["Address", "Bypass Road, Handwara, Kupwara"],
-  ["Principal", "Mrs Jasmine Rafiq Mir"],
+  ["Address", "BYPASS ROAD HANDWARA KUPWARA"],
+  ["Principal", "MRS JASMINE RAFIQ MIR"],
   ["Qualification", "M.A B.Ed/ DSM"],
-  ["E-mail", "principalgdgkupwara1@gmail.com"],
+  ["E-mail", "PRINCIPALGDGKUPWARA1@GMAIL.COM"],
   ["Contact", "7020169259"],
 ];
 
@@ -74,7 +74,7 @@ export const mpdInfrastructure = [
   ["English language lab", "01"],
   ["Computer lab", "01"],
   ["Library", "01"],
-  ["School auditorium", "350 sq. m, capacity 300"],
+  ["School auditorium", "350 sq. m, capacity 500+"],
   ["Internet facility", "Yes"],
   ["Girls' toilets", "36"],
   ["Boys' toilets", "36"],

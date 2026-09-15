@@ -1,5 +1,6 @@
 export type DisclosureFile = {
-  filename: string;
+  filename?: string;
+  href?: string;
   label?: string;
 };
 
@@ -109,7 +110,12 @@ export const resultAndAcademics: DisclosureRow[] = [
   },
   {
     information: "Staff details",
-    files: [{ filename: "Staff.pdf", label: "Staff" }],
+    files: [
+      {
+        href: "/know-us/mandatory-disclosure/staff",
+        label: "Staff",
+      },
+    ],
   },
   {
     information: "House System Planner",
@@ -117,4 +123,18 @@ export const resultAndAcademics: DisclosureRow[] = [
       { filename: "House System  Planner.pdf", label: "House System Planner" },
     ],
   },
+];
+
+/** Extracted from public/documents/mandatory-disclosure/Staff.pdf */
+export const staffTeachingDetails: [string, string][] = [
+  ["Principal", "Miss Iram"],
+  ["Total No. of Teachers", "29"],
+  ["TGT", "08"],
+  ["PRT", "08"],
+  ["Nursery Teachers", "10"],
+  ["Teacher : Section Ratio", "1.5:1"],
+  ["Librarian", "Miss Tabassum, Graduate"],
+  ["Details of Special Educator", "Miss Afshana Banday, M.A, B.Ed."],
+  ["Details of Counsellor", "Miss Syed Shaista, Master's Degree, B.Ed."],
+  ["Wellness Teacher", "Miss Syed Shaista, Master's Degree, B.Ed."],
 ];

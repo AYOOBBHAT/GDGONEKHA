@@ -98,7 +98,7 @@ export const facilitiesShowcase = [
   },
   {
     title: "Auditorium",
-    caption: "300-seat auditorium for assembly, performance and lecture",
+    caption: "500+ seat auditorium for assembly, performance and lecture",
     placeholder: "Auditorium",
   },
   {
@@ -136,8 +136,8 @@ export const facilitiesShowcase = [
 export const schoolStats = [
   {
     label: "Campus",
-    value: "95 kanals",
-    detail: "15,175 sq. m of carefully planned ground in Kupwara",
+    value: "5 kanals",
+    detail: "Carefully planned ground in Kupwara",
   },
   {
     label: "Learning spaces",
@@ -146,13 +146,13 @@ export const schoolStats = [
   },
   {
     label: "Assembly",
-    value: "300 seats",
+    value: "500+ seats",
     detail: "A spacious auditorium for performance, lecture and gathering",
   },
   {
     label: "Pathway",
     value: "Nursery–XII",
-    detail: "English-medium, co-educational, CBSE affiliation no. 730129",
+    detail: "English-medium, co-educational, CBSE",
   },
 ];
 

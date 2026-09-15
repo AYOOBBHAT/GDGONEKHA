@@ -7,7 +7,7 @@ import { images } from "@/lib/images";
 const tiles = [
   {
     title: "The campus",
-    caption: "95-kanal campus in Kupwara",
+    caption: "5-kanal campus in Kupwara",
     image: images.campusAerial,
     className: "md:col-span-2 md:row-span-2 min-h-[240px] sm:min-h-[280px] md:min-h-[540px]",
   },
@@ -39,7 +39,7 @@ export function Facilities() {
           <SectionHeading
             eyebrow="Campus"
             title="A campus built with intention."
-            subtitle="Soundproof classrooms, Wi-Fi, central air-conditioning, a 300-seat auditorium, a food court, and sports infrastructure of international standard — including a semi-Olympic swimming pool."
+            subtitle="Soundproof classrooms, Wi-Fi, central air-conditioning, a 500+ seat auditorium, a food court, and sports infrastructure of international standard — including a semi-Olympic swimming pool."
           />
         </Reveal>
         <div className="mt-12 grid gap-4 md:grid-cols-3">

@@ -8,6 +8,7 @@ const routes = [
   "/vision-mission",
   "/school-song",
   "/know-us/mandatory-disclosure",
+  "/know-us/mandatory-disclosure/staff",
   "/team",
   "/principal-message",
   "/director-message",

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
   disclosureHref,
   type DisclosureRow,
@@ -11,24 +12,36 @@ function ViewLinks({
   return (
     <div className="flex flex-wrap gap-2">
       {files.map((file) => {
-        const href = disclosureHref(file.filename);
-        const label = file.label ?? file.filename;
+        const href = file.href ?? disclosureHref(file.filename ?? "");
+        const label = file.label ?? file.filename ?? "View";
+        const isDocument = href.startsWith("/documents/");
+        const className =
+          "inline-flex min-h-10 min-w-[5.5rem] items-center justify-center rounded-full border border-ink bg-ink px-4 py-2 text-xs font-semibold uppercase tracking-[0.12em] text-cream transition hover:bg-ink-deep";
+
+        if (isDocument) {
+          return (
+            <a
+              key={href}
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`View ${label}`}
+              className={className}
+            >
+              View
+            </a>
+          );
+        }
+
         return (
-          <a
-            key={file.filename}
+          <Link
+            key={href}
             href={href}
-            target="_blank"
-            rel="noopener noreferrer"
             aria-label={`View ${label}`}
-            className="inline-flex min-h-10 items-center justify-center rounded-full border border-ink bg-ink px-4 py-2 text-xs font-semibold uppercase tracking-[0.12em] text-cream transition hover:bg-ink-deep"
+            className={className}
           >
             View
-            {files.length > 1 ? (
-              <span className="ml-1.5 font-normal normal-case tracking-normal text-cream/80">
-                · {label}
-              </span>
-            ) : null}
-          </a>
+          </Link>
         );
       })}
     </div>

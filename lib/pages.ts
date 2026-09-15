@@ -16,7 +16,7 @@ export const pages: Record<string, PageContent> = {
       },
       {
         type: "p",
-        text: "The campus stretches over 95 Kanals. Every detail on the campus has been carefully undertaken — flooring with anti-skid tiles, antibacterial wall paints, soundproof classrooms, a Wi-Fi-enabled campus, centralized air conditioning, a semi-Olympic size swimming pool, a spacious auditorium, and a food court are a few of the allusions. Sports facilities vis-a-vis lawn tennis, basketball, volleyball, and football courts have been created on international standards.",
+        text: "The campus stretches over 5 Kanals. Every detail on the campus has been carefully undertaken — flooring with anti-skid tiles, antibacterial wall paints, soundproof classrooms, a Wi-Fi-enabled campus, centralized air conditioning, a semi-Olympic size swimming pool, a spacious auditorium, and a food court are a few of the allusions. Sports facilities vis-a-vis lawn tennis, basketball, volleyball, and football courts have been created on international standards.",
       },
       {
         type: "p",
@@ -127,7 +127,7 @@ export const pages: Record<string, PageContent> = {
     blocks: [
       {
         type: "p",
-        text: "The school is affiliated to the Central Board of Secondary Education under affiliation no. 730129. English is the medium of instruction. The establishment works with a single objective: holistic education.",
+        text: "The school is affiliated to the Central Board of Secondary Education. English is the medium of instruction. The establishment works with a single objective: holistic education.",
       },
       {
         type: "p",
@@ -341,7 +341,7 @@ export const pages: Record<string, PageContent> = {
     blocks: [
       {
         type: "p",
-        text: "Anti-skid tiles, antibacterial wall paints, soundproof classrooms, Wi-Fi, centralized air-conditioning, a semi-Olympic swimming pool, a 300-seat auditorium and a food court. Sports courts for lawn tennis, basketball, volleyball and football at international standard.",
+        text: "Anti-skid tiles, antibacterial wall paints, soundproof classrooms, Wi-Fi, centralized air-conditioning, a semi-Olympic swimming pool, a 500+ seat auditorium and a food court. Sports courts for lawn tennis, basketball, volleyball and football at international standard.",
       },
       {
         type: "p",
@@ -362,7 +362,7 @@ export const pages: Record<string, PageContent> = {
           "Soundproof classrooms",
           "Anti-skid flooring and antibacterial wall paints",
           "Semi-Olympic swimming pool",
-          "300-seat auditorium",
+          "500+ seat auditorium",
           "Food court",
           "Robotics, language, science, maths and computer laboratories",
           "CCTV coverage of floors, classrooms, corridors and building perimeter",
