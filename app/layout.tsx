@@ -49,6 +49,9 @@ export const metadata: Metadata = {
     description: site.description,
   },
   robots: { index: true, follow: true },
+  verification: {
+    google: "5qxRx7SIoamNHAumh-c4K1Z1f__3mmXwHlcVwlQIlGU",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

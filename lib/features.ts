@@ -179,7 +179,7 @@ export const faqs = [
   },
   {
     q: "What medical facilities are provided?",
-    a: "The infirmary is managed by qualified medical and nursing staff for first aid throughout the school day. The school doctor is available two days a week and for emergencies. Routine medical check-ups and awareness camps are organised regularly.",
+    a: "The infirmary is managed by qualified medical and nursing staff for first aid throughout the school day. The school doctor is available during school hours. Routine medical check-ups and awareness camps are organised regularly.",
   },
   {
     q: "What aspects of child safety are in place?",
