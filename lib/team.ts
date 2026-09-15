@@ -1,22 +1,31 @@
+import { images } from "./images";
+
 export type StaffMember = {
   name: string;
   role: string;
   qualification?: string;
   group: "leadership" | "admin" | "faculty";
+  image?: string;
 };
 
 export const staff: StaffMember[] = [
   {
-    name: "Sartaj Mir",
+    name: "Mrs Jasmine Rafiq Mir",
     role: "Principal",
-    qualification:
-      "M.A. Public Administration, M.A. Political Science, PG Diploma in Guidance & Counselling, B.Ed., PGDCA",
+    qualification: "M.A B.Ed/ DSM",
     group: "leadership",
+    image: images.principal,
   },
   {
     name: "Raja Zubair Ahmed",
     role: "Director",
     group: "leadership",
+  },
+  {
+    name: "Coordinator",
+    role: "Coordinator",
+    group: "leadership",
+    image: images.coordinator,
   },
   {
     name: "Dr. Asma",

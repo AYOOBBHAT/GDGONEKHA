@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { SchoolImage } from "@/components/ui/SchoolImage";
 import { staff } from "@/lib/team";
 import { cn } from "@/lib/cn";
 
@@ -42,15 +43,25 @@ export function TeamDirectory() {
         {people.map((person) => (
           <li
             key={`${person.name}-${person.role}`}
-            className="rounded-3xl border border-line bg-white p-5"
+            className="overflow-hidden rounded-3xl border border-line bg-white"
           >
-            <p className="text-lg font-semibold tracking-tight">{person.name}</p>
-            <p className="mt-1 text-sm text-gold-dark">{person.role}</p>
-            {person.qualification ? (
-              <p className="mt-3 text-sm leading-relaxed text-muted">
-                {person.qualification}
-              </p>
+            {person.image ? (
+              <SchoolImage
+                src={person.image}
+                alt={person.name}
+                className="aspect-[4/5]"
+                sizes="(max-width: 640px) 100vw, 33vw"
+              />
             ) : null}
+            <div className="p-5">
+              <p className="text-lg font-semibold tracking-tight">{person.name}</p>
+              <p className="mt-1 text-sm text-gold-dark">{person.role}</p>
+              {person.qualification ? (
+                <p className="mt-3 text-sm leading-relaxed text-muted">
+                  {person.qualification}
+                </p>
+              ) : null}
+            </div>
           </li>
         ))}
       </ul>

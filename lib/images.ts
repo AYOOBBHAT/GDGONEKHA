@@ -1,5 +1,26 @@
 const origin = "https://www.gdgoenkabaramulla.com";
 
+export const sportsPhotos = [
+  "/images/sports/DSC00089.jpg",
+  "/images/sports/DSC00093.jpg",
+  "/images/sports/DSC00103.jpg",
+  "/images/sports/DSC00106.jpg",
+  "/images/sports/DSC00111.jpg",
+  "/images/sports/DSC00122.jpg",
+  "/images/sports/DSC00123.jpg",
+  "/images/sports/DSC00165.jpg",
+] as const;
+
+export const activityPhotos = [
+  "/images/activities/DSC00016.jpg",
+  "/images/activities/DSC00027.jpg",
+  "/images/activities/DSC00029.jpg",
+  "/images/activities/DSC00068.jpg",
+  "/images/activities/DSC00071.jpg",
+  "/images/activities/DSC00078.jpg",
+  "/images/activities/DSC00159.jpg",
+] as const;
+
 export const images = {
   /** Official GD Goenka lockup (falcon + wordmark + Thrive. For Life.) */
   brandLogo: "/images/brand/gd-goenka-logo.svg",
@@ -7,14 +28,17 @@ export const images = {
   logo: `${origin}/images/newone.png`,
   logoMark: `${origin}/img/LOGO.png`,
   footerMark: `${origin}/img/GDGoenkaSchool_footer.png`,
-  hero: `${origin}/upload/GDGOENKA--Slider--2026-05-02-01-05-am36--FB-BANNER-1.jpg`,
-  campusWide: `${origin}/images/desktop.jpg`,
-  campusAerial: `${origin}/upload/Gghs--Slider--2024-08-21-01-51-am56--New%20Project.jpg`,
-  campusPortrait: `${origin}/img/gd.jpeg`,
-  about: `${origin}/images/about-bg.png`,
-  principal: `${origin}/img/gdprinciple.jpg`,
+  hero: activityPhotos[1],
+  campusWide: activityPhotos[0],
+  campusAerial: activityPhotos[6],
+  campusPortrait: activityPhotos[4],
+  about: activityPhotos[2],
+  principal: "/images/principal/principal.jpg",
+  coordinator: "/images/coordinator/coordinator.jpg",
   management: `${origin}/img/SCHOOL%20MANAGEMENT%20COMMITTEE_page-0001.jpg`,
   academicCalendar: `${origin}/documents/aaaaaaa.jpeg`,
+  sports: sportsPhotos,
+  activities: activityPhotos,
   news: {
     capacity: `${origin}/upload/gdgoenka--news_event--2026-04-22-02-44-am59--IMG_6773.JPG`,
     baisakhi: `${origin}/upload/gdgoenka--news_event--2026-04-22-02-41-am31--IMG_6807.JPG`,
@@ -24,7 +48,7 @@ export const images = {
     karate: `${origin}/upload/gdgoenka--news_event--2025-03-26-04-14-am15--KARATE.jpg`,
   },
   gallery: {
-    sports1: `${origin}/upload/gdgoenka--awards--2026-05-13-03-37-am47--IMG_9236.JPG`,
-    sports2: `${origin}/upload/Gghs--awards--2024-08-27-12-37-am41--BHS_0638-min.JPG`,
+    sports1: sportsPhotos[0],
+    sports2: sportsPhotos[1],
   },
 } as const;

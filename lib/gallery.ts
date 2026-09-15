@@ -13,78 +13,64 @@ export type GalleryItem = {
   alt: string;
 };
 
-import { images } from "./images";
+import { activityPhotos, sportsPhotos } from "./images";
 
 export const galleryItems: GalleryItem[] = [
-  {
-    id: "sports-awards-1",
+  ...sportsPhotos.map((image, index) => ({
+    id: `sports-${index + 1}`,
     title: "Sports",
-    category: "sports",
-    image: images.gallery.sports1,
-    alt: "Students at a sports event at GD Goenka Public School Kupwara",
-  },
+    category: "sports" as const,
+    image,
+    alt: "Sports at GD Goenka Public School Kupwara",
+  })),
   {
-    id: "sports-awards-2",
-    title: "Sports",
-    category: "sports",
-    image: images.gallery.sports2,
-    alt: "School sports celebration at GD Goenka Kupwara",
-  },
-  {
-    id: "karate",
-    title: "Sports",
-    category: "sports",
-    image: images.news.karate,
-    alt: "Karate championship achievement at GD Goenka Kupwara",
-  },
-  {
-    id: "sdrf",
-    title: "Outdoor Activities",
+    id: "activity-1",
+    title: "School life",
     category: "outdoor",
-    image: images.news.sdrf,
-    alt: "Students in disaster-response training with SDRF",
+    image: activityPhotos[0],
+    alt: "Campus activity at GD Goenka Public School Kupwara",
   },
   {
-    id: "baisakhi",
+    id: "activity-2",
+    title: "School life",
+    category: "class",
+    image: activityPhotos[1],
+    alt: "Students during a school activity at GD Goenka Kupwara",
+  },
+  {
+    id: "activity-3",
+    title: "Class Activities",
+    category: "class",
+    image: activityPhotos[2],
+    alt: "Classroom and campus activity at GD Goenka Kupwara",
+  },
+  {
+    id: "activity-4",
     title: "House Activities",
     category: "house",
-    image: images.news.baisakhi,
-    alt: "Baisakhi celebration at GD Goenka Public School Kupwara",
+    image: activityPhotos[3],
+    alt: "Students gathered for a school celebration at GD Goenka Kupwara",
   },
   {
-    id: "book-day",
-    title: "Class Activities",
-    category: "class",
-    image: images.news.bookDay,
-    alt: "Grade 2 students celebrating International Children's Book Day",
-  },
-  {
-    id: "capacity",
-    title: "Class Activities",
-    category: "class",
-    image: images.news.capacity,
-    alt: "Teachers at a capacity building program",
-  },
-  {
-    id: "olympiad",
-    title: "Class Activities",
-    category: "class",
-    image: images.news.olympiad,
-    alt: "SOF Olympiad achievement at GD Goenka Kupwara",
-  },
-  {
-    id: "campus-life",
+    id: "activity-5",
     title: "Outdoor Activities",
     category: "outdoor",
-    image: images.campusPortrait,
+    image: activityPhotos[4],
+    alt: "Outdoor school activity at GD Goenka Public School Kupwara",
+  },
+  {
+    id: "activity-6",
+    title: "Class Activities",
+    category: "class",
+    image: activityPhotos[5],
+    alt: "Learning activity at GD Goenka Public School Kupwara",
+  },
+  {
+    id: "activity-7",
+    title: "School life",
+    category: "outdoor",
+    image: activityPhotos[6],
     alt: "Campus life at GD Goenka Public School Kupwara",
-  },
-  {
-    id: "campus-wide",
-    title: "Outdoor Activities",
-    category: "outdoor",
-    image: images.campusWide,
-    alt: "GD Goenka Public School Kupwara campus",
   },
 ];
 

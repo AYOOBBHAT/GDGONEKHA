@@ -57,5 +57,7 @@ export const site = {
     directorTitle: "Director",
     principal: "Mrs Jasmine Rafiq Mir",
     principalTitle: "Principal, GD Goenka Public School Kupwara",
+    coordinator: "Coordinator",
+    coordinatorTitle: "Coordinator",
   },
 } as const;

@@ -54,6 +54,10 @@ Thumbs.db
 ehthumbs.db
 Desktop.ini
 
+# Camera RAW (site uses extracted JPEGs)
+*.ARW
+*.arw
+
 # IDE / editors
 .idea/
 .vscode/*

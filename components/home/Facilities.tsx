@@ -21,7 +21,7 @@ const tiles = [
   {
     title: "Learning in motion",
     caption: "Activity, culture and character, every week",
-    image: images.news.baisakhi,
+    image: images.activities[3],
     className: "min-h-[200px] sm:min-h-[240px]",
   },
   {
