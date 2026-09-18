@@ -487,7 +487,7 @@ export const pages: Record<string, PageContent> = {
         type: "p",
         text: "Admission must be closed by payment of fee within 5 days from registration or selection. Students are admitted first-come, first-served depending on seat availability. Fees are not refunded. The school reserves the right to admissions; the Admission Committee’s decision is final.",
       },
-      { type: "h2", text: "Class-wise age criteria for admission — 2025" },
+      { type: "h2", text: "Class-wise age criteria for admission — 2027" },
       {
         type: "table",
         headers: ["Class", "Entry age", "Remarks"],

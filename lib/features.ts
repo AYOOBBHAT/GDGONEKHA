@@ -159,7 +159,7 @@ export const schoolStats = [
 export const faqs = [
   {
     q: "Where is GDGPS?",
-    a: "GD Goenka Public School is located in Kupwara, Jammu & Kashmir.",
+    a: "GD Goenka Public School is located at Bypass Road, Handwara, Kupwara-193221, Jammu And Kashmir.",
   },
   {
     q: "How is GDGPS different from other schools in Kupwara?",
