@@ -48,11 +48,11 @@ export const mpdGeneral = [
   ["Name of the school", "G.D. GOENKA PUBLIC SCHOOL KUPWARA"],
   ["Affiliation no.", "---"],
   ["School code", "---"],
-  ["Address", "BYPASS ROAD HANDWARA KUPWARA"],
+  ["Address", "BYPASS ROAD, NEAR FRUIT MANDY, IQBAL ABAD HANDWARA, KUPWARA, JAMMU & KASHMIR - 193221"],
   ["Principal", "MRS JASMINE RAFIQ MIR"],
   ["Qualification", "M.A B.Ed/ DSM"],
-  ["E-mail", "PRINCIPALGDGKUPWARA1@GMAIL.COM"],
-  ["Contact", "7020169259"],
+  ["E-mail", "GDGOENKAHND@GMAIL.COM"],
+  ["Contact", "8492980030"],
 ];
 
 export const mpdInfrastructure = [

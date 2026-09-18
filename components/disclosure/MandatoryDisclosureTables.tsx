@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { CopyDocumentLinks } from "@/components/disclosure/CopyDocumentLinks";
 import {
   disclosureHref,
   type DisclosureRow,
@@ -51,9 +52,11 @@ function ViewLinks({
 function DisclosureTable({
   title,
   rows,
+  showCopyLinks = false,
 }: {
   title: string;
   rows: DisclosureRow[];
+  showCopyLinks?: boolean;
 }) {
   return (
     <section className="mt-12 first:mt-0">
@@ -63,7 +66,7 @@ function DisclosureTable({
 
       {/* Desktop / tablet table */}
       <div className="mt-6 hidden overflow-x-auto rounded-2xl border border-line bg-white scroll-hint md:block">
-        <table className="w-full min-w-[640px] text-left text-sm">
+        <table className={`w-full text-left text-sm ${showCopyLinks ? "min-w-[860px]" : "min-w-[640px]"}`}>
           <thead className="bg-cream-2">
             <tr>
               <th scope="col" className="w-16 px-5 py-4 font-semibold text-ink">
@@ -72,9 +75,14 @@ function DisclosureTable({
               <th scope="col" className="px-5 py-4 font-semibold text-ink">
                 Information
               </th>
-              <th scope="col" className="w-[280px] px-5 py-4 font-semibold text-ink">
+              <th scope="col" className="w-[200px] px-5 py-4 font-semibold text-ink">
                 Details
               </th>
+              {showCopyLinks ? (
+                <th scope="col" className="w-[120px] px-5 py-4 font-semibold text-ink">
+                  Copy document links
+                </th>
+              ) : null}
             </tr>
           </thead>
           <tbody>
@@ -85,6 +93,11 @@ function DisclosureTable({
                 <td className="px-5 py-4">
                   <ViewLinks files={row.files} />
                 </td>
+                {showCopyLinks ? (
+                  <td className="px-5 py-4">
+                    <CopyDocumentLinks files={row.files} />
+                  </td>
+                ) : null}
               </tr>
             ))}
           </tbody>
@@ -104,8 +117,9 @@ function DisclosureTable({
             <p className="mt-2 text-sm font-medium leading-snug text-ink">
               {row.information}
             </p>
-            <div className="mt-4">
+            <div className="mt-4 flex flex-col gap-2">
               <ViewLinks files={row.files} />
+              {showCopyLinks ? <CopyDocumentLinks files={row.files} /> : null}
             </div>
           </li>
         ))}
@@ -126,6 +140,7 @@ export function MandatoryDisclosureTables({
       <DisclosureTable
         title="Documents and Information"
         rows={documents}
+        showCopyLinks
       />
       <DisclosureTable
         title="Result and Academics"

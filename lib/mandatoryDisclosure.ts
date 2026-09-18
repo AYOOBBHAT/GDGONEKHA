@@ -27,10 +27,7 @@ export const documentsAndInformation: DisclosureRow[] = [
   {
     information:
       "Copies of Societies / Trust / Company Registration / Renewal Certificate, as applicable",
-    files: [
-      { filename: "Trust.pdf", label: "Trust Certificate" },
-      { filename: "GD goenka Trust Deed.pdf", label: "Trust Deed" },
-    ],
+    files: [{ filename: "Trust.pdf", label: "Trust Certificate" }],
   },
   {
     information:
@@ -73,10 +70,7 @@ export const documentsAndInformation: DisclosureRow[] = [
   },
   {
     information: "Lease Certificate",
-    files: [
-      { filename: "lease.pdf", label: "Lease Certificate" },
-      { filename: "leese deed.pdf", label: "Lease Deed" },
-    ],
+    files: [{ filename: "lease.pdf", label: "Lease Certificate" }],
   },
   {
     information: "List of School Management Committee (SMC) / Managing Body",
@@ -127,7 +121,7 @@ export const resultAndAcademics: DisclosureRow[] = [
 
 /** Extracted from public/documents/mandatory-disclosure/Staff.pdf */
 export const staffTeachingDetails: [string, string][] = [
-  ["Principal", "Miss Iram"],
+  ["Principal", "01"],
   ["Total No. of Teachers", "29"],
   ["TGT", "08"],
   ["PRT", "08"],

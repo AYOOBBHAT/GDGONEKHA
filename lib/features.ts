@@ -136,8 +136,8 @@ export const facilitiesShowcase = [
 export const schoolStats = [
   {
     label: "Campus",
-    value: "5 kanals",
-    detail: "Carefully planned ground in Kupwara",
+    value: "45 kanals",
+    detail: "Carefully planned ground in Handwara, Kupwara",
   },
   {
     label: "Learning spaces",

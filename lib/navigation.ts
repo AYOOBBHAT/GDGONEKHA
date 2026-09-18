@@ -21,7 +21,6 @@ export const mainNav: NavItem[] = [
       { label: "Vision & Mission", href: "/vision-mission" },
       { label: "School Song", href: "/school-song" },
       { label: "Mandatory Public Disclosure", href: "/know-us/mandatory-disclosure" },
-      { label: "Our Team", href: "/team" },
       { label: "Principal's Message", href: "/principal-message" },
       { label: "Director's Message", href: "/director-message" },
     ],
@@ -105,7 +104,6 @@ export const footerNav = {
     { label: "The School", href: "/about" },
     { label: "Vision & Mission", href: "/vision-mission" },
     { label: "Our Founder", href: "/founder" },
-    { label: "Our Team", href: "/team" },
     { label: "Mandatory Disclosure", href: "/know-us/mandatory-disclosure" },
   ],
   academics: [

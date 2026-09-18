@@ -7,7 +7,7 @@ import { images } from "@/lib/images";
 const tiles = [
   {
     title: "The campus",
-    caption: "5-kanal campus in Kupwara",
+    caption: "45 kanals campus in Handwara,Kupwara",
     image: images.campusAerial,
     className: "md:col-span-2 md:row-span-2 min-h-[240px] sm:min-h-[280px] md:min-h-[540px]",
   },
@@ -24,7 +24,7 @@ const tiles = [
     className: "min-h-[200px] sm:min-h-[240px]",
   },
   {
-    title: "Sport",
+    title: "Sports",
     caption: "Football, basketball, tennis, volleyball, swimming",
     image: images.gallery.sports1,
     className: "min-h-[200px] sm:min-h-[240px]",

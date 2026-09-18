@@ -16,7 +16,7 @@ export const pages: Record<string, PageContent> = {
       },
       {
         type: "p",
-        text: "The campus stretches over 5 Kanals. Every detail on the campus has been carefully undertaken — flooring with anti-skid tiles, antibacterial wall paints, soundproof classrooms, a Wi-Fi-enabled campus, centralized air conditioning, a semi-Olympic size swimming pool, a spacious auditorium, and a food court are a few of the allusions. Sports facilities vis-a-vis lawn tennis, basketball, volleyball, and football courts have been created on international standards.",
+        text: "The campus stretches over 45 Kanals. Every detail on the campus has been carefully undertaken — flooring with anti-skid tiles, antibacterial wall paints, soundproof classrooms, a Wi-Fi-enabled campus, centralized air conditioning, a semi-Olympic size swimming pool, a spacious auditorium, and a food court are a few of the allusions. Sports facilities vis-a-vis lawn tennis, basketball, volleyball, and football courts have been created on international standards.",
       },
       {
         type: "p",
@@ -521,7 +521,7 @@ export const pages: Record<string, PageContent> = {
     blocks: [
       {
         type: "p",
-        text: "The official e-prospectus is published by the school. For the latest file, use the prospectus link on the existing school portal, or request a copy from the admissions desk at principalgdgkupwara1@gmail.com.",
+        text: "The official e-prospectus is published by the school. For the latest file, use the prospectus link on the existing school portal, or request a copy from the admissions desk at gdgoenkahnd@gmail.com.",
       },
     ],
   },
@@ -577,7 +577,7 @@ export const pages: Record<string, PageContent> = {
       },
       {
         type: "p",
-        text: "School helpdesk: 7020169259. For admissions and transport queries, call the school office or write to principalgdgkupwara1@gmail.com.",
+        text: "School helpdesk: 8492980030. For admissions and transport queries, call the school office or write to gdgoenkahnd@gmail.com.",
       },
       {
         type: "h2",

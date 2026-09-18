@@ -10,8 +10,9 @@ export function JsonLd() {
     telephone: site.phones.map((p) => p.value),
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Kupwara",
+      streetAddress: "Bypass Road, Near Fruit Mandy, Iqbal Abad Handwara",
       addressLocality: "Kupwara",
+      postalCode: "193221",
       addressRegion: "Jammu and Kashmir",
       addressCountry: "IN",
     },

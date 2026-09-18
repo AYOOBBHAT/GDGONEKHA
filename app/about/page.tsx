@@ -6,7 +6,7 @@ import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
   "The School",
-  "GD Goenka Public School Kupwara — a CBSE school in Kupwara with a 5-kanal campus and child-focused education.",
+  "GD Goenka Public School Kupwara — a CBSE school in Kupwara with a 45-kanal campus and child-focused education.",
   "/about",
 );
 

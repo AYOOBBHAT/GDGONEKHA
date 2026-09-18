@@ -12,19 +12,19 @@ export const site = {
   schoolCode: "---",
   trust: "Symphony Educational Trust",
   address: {
-    line1: "Bypass Road, Handwara, Kupwara",
-    line2: "Jammu & Kashmir",
+    line1: "Bypass Road, Near Fruit Mandy, Iqbal Abad Handwara",
+    line2: "Kupwara, Jammu & Kashmir - 193221",
     region: "Jammu & Kashmir",
     mapsQuery: "GD Goenka Public School Kupwara",
     mapsEmbed:
       "https://maps.google.com/maps?q=GD%20Goenka%20Public%20School%20Kupwara&t=&z=15&ie=UTF8&iwloc=&output=embed",
   },
   phones: [
-    { label: "School", value: "7020169259", href: "tel:7020169259" },
+    { label: "School", value: "8492980030", href: "tel:8492980030" },
   ],
-  email: "principalgdgkupwara1@gmail.com",
-  whatsapp: "https://api.whatsapp.com/send?phone=917020169259",
-  whatsappPhone: "917020169259",
+  email: "gdgoenkahnd@gmail.com",
+  whatsapp: "https://api.whatsapp.com/send?phone=918492980030",
+  whatsappPhone: "918492980030",
   social: {
     facebook: "https://www.facebook.com/G.DGoenkaKupwara",
     instagram: "https://www.instagram.com/gdgoenka.kupwara",
