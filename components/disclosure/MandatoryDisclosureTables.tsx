@@ -12,7 +12,10 @@ function ViewLinks({
 }) {
   return (
     <div className="flex flex-wrap gap-2">
-      {files.map((file) => {
+      {files.length === 0 ? (
+        <span className="text-sm text-muted">To be uploaded</span>
+      ) : (
+        files.map((file) => {
         const href = file.href ?? disclosureHref(file.filename ?? "");
         const label = file.label ?? file.filename ?? "View";
         const isDocument = href.startsWith("/documents/");
@@ -44,7 +47,8 @@ function ViewLinks({
             View
           </Link>
         );
-      })}
+      })
+      )}
     </div>
   );
 }

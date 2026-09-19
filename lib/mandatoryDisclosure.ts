@@ -27,17 +27,12 @@ export const documentsAndInformation: DisclosureRow[] = [
   {
     information:
       "Copies of Societies / Trust / Company Registration / Renewal Certificate, as applicable",
-    files: [{ filename: "Trust.pdf", label: "Trust Certificate" }],
+    files: [{ filename: "Registration .pdf", label: "Registration Certificate" }],
   },
   {
     information:
       "Copies of Recognition Certificate under RTE Act, 2009, and its renewal if applicable",
-    files: [
-      {
-        filename: "RecognitionCertificate_12434011020122025.pdf",
-        label: "Recognition Certificate",
-      },
-    ],
+    files: [],
   },
   {
     information:
@@ -47,60 +42,52 @@ export const documentsAndInformation: DisclosureRow[] = [
         filename: "building certificate.jpeg",
         label: "Building Safety Certificate",
       },
+      {
+        filename: "R&B..pdf",
+        label: "R&B Building Safety Certificate",
+      },
     ],
   },
   {
     information:
       "Copy of valid Fire Safety Certificate issued by the competent authority",
-    files: [
-      {
-        filename: "Fire and emergency 2025.pdf",
-        label: "Fire and Emergency Certificate",
-      },
-    ],
+    files: [{ filename: "Fire emergency..pdf", label: "Fire and Emergency Certificate" }],
   },
   {
     information: "Copies of valid Water, Health and Sanitation Certificates",
-    files: [
-      {
-        filename: "sanitation certificate.jpeg",
-        label: "Sanitation Certificate",
-      },
-    ],
+    files: [{ filename: "Sanitary.pdf", label: "Sanitation Certificate" }],
   },
   {
     information: "Lease Certificate",
-    files: [{ filename: "lease.pdf", label: "Lease Certificate" }],
+    files: [{ filename: "Lease..pdf", label: "Lease Certificate" }],
   },
   {
     information: "List of School Management Committee (SMC) / Managing Body",
-    files: [{ filename: "managing-body", label: "Managing Body" }],
+    files: [{ filename: "SMC.pdf", label: "School Management Committee" }],
   },
 ];
 
 export const resultAndAcademics: DisclosureRow[] = [
   {
     information: "Fee structure of the school",
-    files: [{ filename: "Fee.pdf", label: "Fee Structure" }],
+    files: [{ filename: "Fee Structure.pdf", label: "Fee Structure" }],
   },
   {
     information: "Annual academic calendar / yearly events",
-    files: [
-      { filename: "Yearly  Events 2026.pdf", label: "Yearly Events 2026" },
-    ],
+    files: [],
   },
   {
     information: "List of Parent Teacher Association (PTA)",
     files: [
       {
-        filename: "Parent Teacher Association.pdf",
+        filename: "parent-teacher-assosication.pdf",
         label: "Parent Teacher Association",
       },
     ],
   },
   {
     information: "POCSO Committee",
-    files: [{ filename: "POSCO.pdf", label: "POCSO Committee" }],
+    files: [],
   },
   {
     information: "Staff details",
@@ -113,9 +100,7 @@ export const resultAndAcademics: DisclosureRow[] = [
   },
   {
     information: "House System Planner",
-    files: [
-      { filename: "House System  Planner.pdf", label: "House System Planner" },
-    ],
+    files: [],
   },
 ];
 
