@@ -5,6 +5,14 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: "https",
+        hostname: "www.gdgoenkakupwara.com",
+      },
+      {
+        protocol: "https",
+        hostname: "gdgoenkakupwara.com",
+      },
+      {
+        protocol: "https",
         hostname: "www.gdgoenkabaramulla.com",
       },
       {

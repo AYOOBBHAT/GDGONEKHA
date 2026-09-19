@@ -7,7 +7,7 @@ export const site = {
   logoLocation: "Kupwara",
   description:
     "GD Goenka Public School Kupwara is a CBSE school in Kupwara, Jammu & Kashmir, offering a globally acknowledged, activity-based curriculum with state-of-the-art infrastructure.",
-  url: "https://www.gdgoenkabaramulla.com",
+  url: "https://www.gdgoenkakupwara.com",
   affiliation: "---",
   schoolCode: "---",
   trust: "Symphony Educational Trust",
