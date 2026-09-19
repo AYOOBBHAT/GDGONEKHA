@@ -1,10 +1,6 @@
-import { metadata as studioMetadata, viewport } from "next-sanity/studio";
+export { metadata, viewport } from "next-sanity/studio";
 
-export const metadata = studioMetadata;
-export { viewport };
-export const dynamic = "force-static";
-
-export default function StudioLayout({
+export default function StudioToolLayout({
   children,
 }: {
   children: React.ReactNode;

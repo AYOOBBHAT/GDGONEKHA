@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { headers } from "next/headers";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { SiteChrome } from "@/components/layout/SiteChrome";
 import { images } from "@/lib/images";
@@ -53,12 +54,21 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default async function RootLayout({ children }: LayoutProps<"/">) {
+  const pathname = (await headers()).get("x-pathname") ?? "";
+  const isStudio = pathname.startsWith("/studio");
+
   return (
     <html lang="en" className={`${inter.variable} h-full antialiased`}>
       <body className="min-h-full bg-cream font-sans text-ink">
-        <JsonLd />
-        <SiteChrome>{children}</SiteChrome>
+        {isStudio ? (
+          children
+        ) : (
+          <>
+            <JsonLd />
+            <SiteChrome>{children}</SiteChrome>
+          </>
+        )}
       </body>
     </html>
   );
