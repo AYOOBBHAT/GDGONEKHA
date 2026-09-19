@@ -4,7 +4,7 @@ import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
   "Teaching Methodology",
-  "Faculty qualifications, classroom craft and continuous professional development at GD Goenka Kupwara.",
+  "How GD Goenka Public School Kupwara teaches: questioning, practice, labs, sport, and a partnership with parents.",
   "/teaching-methodology",
 );
 

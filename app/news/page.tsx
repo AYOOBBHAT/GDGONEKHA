@@ -15,8 +15,8 @@ export default function Page() {
     <>
       <PageHero
         eyebrow="News"
-        title="What's happening at Goenka"
-        lead="Capacity building, celebrations, skill training and student achievement."
+        title="Life on campus"
+        lead="Independence Day, health checkups and parent meetings — photographed at GD Goenka Kupwara."
       />
       <Container className="grid gap-4 py-14 sm:grid-cols-2 xl:grid-cols-3 md:py-20">
         {news.map((article) => (

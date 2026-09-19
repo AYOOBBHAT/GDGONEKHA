@@ -45,6 +45,19 @@ export default async function Page({
           className="aspect-[16/10] rounded-[1.8rem]"
           sizes="768px"
         />
+        {article.gallery && article.gallery.length > 1 ? (
+          <div className="mt-4 grid grid-cols-3 gap-3">
+            {article.gallery.slice(1).map((src) => (
+              <SchoolImage
+                key={src}
+                src={src}
+                alt={article.title}
+                className="aspect-[4/3] rounded-2xl"
+                sizes="(max-width: 768px) 33vw, 240px"
+              />
+            ))}
+          </div>
+        ) : null}
         <div className="prose-school mt-10">
           {article.body.map((paragraph) => (
             <p key={paragraph}>{paragraph}</p>

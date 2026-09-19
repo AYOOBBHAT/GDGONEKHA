@@ -9,7 +9,13 @@ export const metadata = pageMeta(
   "/career/apply",
 );
 
-export default function Page() {
+export default async function Page({
+  searchParams,
+}: {
+  searchParams: Promise<{ role?: string }>;
+}) {
+  const { role } = await searchParams;
+
   return (
     <>
       <PageHero
@@ -18,7 +24,7 @@ export default function Page() {
         lead="Share your details and the role you want — WhatsApp will open with your application ready to send to the school."
       />
       <Container className="py-10 md:py-16">
-        <ApplyForm variant="career" />
+        <ApplyForm variant="career" initialRole={role ?? ""} />
       </Container>
     </>
   );

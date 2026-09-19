@@ -3,6 +3,10 @@ import {
   schoolSongLyrics,
   type PageContent,
 } from "./content";
+import {
+  academicCalendarHeaders,
+  academicCalendarRows,
+} from "./academicCalendar";
 
 export const pages: Record<string, PageContent> = {
   about: {
@@ -16,7 +20,7 @@ export const pages: Record<string, PageContent> = {
       },
       {
         type: "p",
-        text: "The campus stretches over 45 Kanals. Every detail on the campus has been carefully undertaken — flooring with anti-skid tiles, antibacterial wall paints, soundproof classrooms, a Wi-Fi-enabled campus, centralized air conditioning, a semi-Olympic size swimming pool, a spacious auditorium, and a food court are a few of the allusions. Sports facilities vis-a-vis lawn tennis, basketball, volleyball, and football courts have been created on international standards.",
+        text: "The campus stretches over 45 Kanals. Every detail on the campus has been carefully undertaken — flooring with anti-skid tiles, antibacterial wall paints, soundproof classrooms, a Wi-Fi-enabled campus, a semi-Olympic size swimming pool, a 200-seat auditorium, and a food court are a few of the allusions. Sports facilities vis-a-vis lawn tennis, basketball, volleyball, and football courts have been created on international standards.",
       },
       {
         type: "p",
@@ -100,23 +104,122 @@ export const pages: Record<string, PageContent> = {
   },
   director: {
     eyebrow: "Know us",
-    title: "Director's message",
-    lead: "Official message will be published soon.",
+    title: "From the desk of the Director",
+    lead: "Dear Students, Parents, and Esteemed Members of the GD Goenka Public School Handwara Community,",
     blocks: [
       {
-        type: "note",
-        text: "The Director’s message will be added here shortly. Please check back later, or contact the school office for more information.",
+        type: "p",
+        text: "As we continue our journey of growth and excellence, I am pleased to share our unwavering commitment to providing a nurturing and inspiring environment for all who walk through our doors.",
+      },
+      {
+        type: "p",
+        text: "At GD Goenka Public School Handwara, we believe in empowering students to discover their potential, develop critical thinking skills, and grow into responsible and compassionate citizens of the world. Our academic programs are designed not only to challenge students intellectually, but also to foster personal growth, resilience, and a strong sense of community.",
+      },
+      {
+        type: "p",
+        text: "Our dedicated faculty and staff are the heart of this institution, working with passion and purpose to ensure each student is given the opportunity to succeed. We also believe that education extends beyond the classroom, which is why we offer a wide range of extracurricular activities that encourage students to explore their interests, hone their talents, and develop leadership skills.",
+      },
+      {
+        type: "p",
+        text: "The journey of learning is a partnership between students, teachers, parents, and the broader community. Together, we create an environment where curiosity is nurtured, creativity is celebrated, and every student is supported in reaching their highest potential.",
+      },
+      {
+        type: "p",
+        text: "I am incredibly proud of our school’s accomplishments and the strides we continue to make in shaping a bright future for our students. I look forward to the continued success we will achieve together as a community.",
+      },
+      {
+        type: "p",
+        text: "Warm regards,",
+      },
+      {
+        type: "p",
+        text: "Dr. Khalid Maqbool, Director, GD Goenka Public School Handwara",
+      },
+    ],
+  },
+  managingDirector: {
+    eyebrow: "Know us",
+    title: "From the desk of the Managing Director",
+    lead: "Dear Parents, Students, and Visitors,",
+    blocks: [
+      {
+        type: "p",
+        text: "Welcome to GD Goenka Public School Handwara. It is with great enthusiasm that I reach out to our entire school community as we embark on another exciting chapter in our journey of learning, growth, and achievement. As the Managing Director of this vibrant institution, I am deeply committed to fostering an environment that not only focuses on academic excellence but also promotes personal development, creativity, and well-being for all our students.",
+      },
+      {
+        type: "p",
+        text: "At GD Goenka Public School Handwara, we understand that education is about more than just classroom lessons. It’s about preparing our students to be resilient, responsible, and engaged citizens in a rapidly changing world. We aim to provide a holistic education that combines rigorous academics with a broad range of extracurricular activities, creating opportunities for every child to explore their passions, build confidence, and develop lifelong skills.",
+      },
+      {
+        type: "p",
+        text: "Our dedicated team of educators works closely with students, encouraging them to push boundaries, ask questions, and think critically. We are also deeply committed to fostering a supportive and inclusive environment where every student feels valued and respected. We believe in the power of collaboration – between teachers, students, parents, and the wider community – to create a culture of success that benefits everyone.",
+      },
+      {
+        type: "p",
+        text: "The partnership between school and home is one of the cornerstones of our philosophy. We believe that the involvement of parents and guardians is integral to the academic and personal success of our students. Your continued support and active engagement are vital in helping us maintain the high standards that make GD Goenka Public School Handwara such a special place.",
+      },
+      {
+        type: "p",
+        text: "As we look ahead, I am excited about the many opportunities we have to grow, innovate, and strengthen our community. Together, we will continue to inspire our students to reach their fullest potential, overcome challenges, and become thoughtful, compassionate, and confident individuals ready to make a positive difference in the world.",
+      },
+      {
+        type: "p",
+        text: "Thank you for choosing GD Goenka Public School Handwara as the place where your child’s educational journey will unfold. I look forward to working alongside you to ensure that every student experiences the very best we have to offer.",
+      },
+      {
+        type: "p",
+        text: "Warm regards,",
+      },
+      {
+        type: "p",
+        text: "Imtiyaz Maqbool Bhat, Managing Director, GD Goenka Public School Handwara",
       },
     ],
   },
   principal: {
     eyebrow: "Know us",
     title: "Principal's message",
-    lead: "Official message will be published soon.",
+    lead: "Dear Parents, Students, and Well-Wishers,",
     blocks: [
       {
-        type: "note",
-        text: "The Principal’s message will be added here shortly. Please check back later, or contact the school office for more information.",
+        type: "p",
+        text: "It is my privilege and honor to welcome you to GD Goenka School, a place where education goes beyond classrooms, textbooks, and examinations. Our vision is to nurture young minds who are confident, compassionate, curious, responsible, and prepared to make a meaningful contribution to the world.",
+      },
+      {
+        type: "p",
+        text: "At GD Goenka Public School, we believe that every child is unique and possesses the potential to flourish. Our theme, “Thrive for Life,” beautifully reflects our commitment to providing an environment where every learner is encouraged not merely to succeed, but to grow, discover, contribute, and thrive throughout life. We endeavour to provide an enriching environment where academic excellence goes hand in hand with character, creativity, critical thinking, communication, collaboration, physical well-being, and emotional growth.",
+      },
+      {
+        type: "p",
+        text: "As a school, we also recognise that education is a partnership between the school, the child, and the family. With the trust and support of our parents and the dedication of our teachers and staff, we can create a nurturing environment where every child feels valued, heard, respected, and inspired to give their best.",
+      },
+      {
+        type: "p",
+        text: "I firmly believe that the finest education is built through a strong partnership between school, parents, teachers, and students. With mutual trust, open communication, and a shared commitment to the child’s well-being, we can create an environment in which every learner has the opportunity to thrive.",
+      },
+      {
+        type: "p",
+        text: "My vision is to build a school culture where every child feels a sense of belonging, every teacher feels empowered to inspire, and every learner is encouraged to dream with purpose. We want our students to leave our classrooms not only with knowledge, but also with the confidence and character to face life with courage, kindness, resilience, and responsibility.",
+      },
+      {
+        type: "p",
+        text: "As we move forward together, let us inspire our children to dream fearlessly, learn continuously, lead responsibly, and live purposefully.",
+      },
+      {
+        type: "quote",
+        text: "At GD Goenka School, we don't just prepare children for the future. We prepare them to thrive—throughout life.",
+      },
+      {
+        type: "p",
+        text: "I warmly welcome you to our school community and look forward to a wonderful journey of learning, growth, and excellence together.",
+      },
+      {
+        type: "p",
+        text: "With warm regards,",
+      },
+      {
+        type: "p",
+        text: "Principal, GD Goenka Public School",
       },
     ],
   },
@@ -131,33 +234,72 @@ export const pages: Record<string, PageContent> = {
       },
       {
         type: "p",
-        text: "Explore our teaching methodology, academic calendar and book list to understand how learning is planned across the year.",
+        text: "Explore teaching methodology, the academic calendar, and the curriculum to see how learning is planned from Nursery through Class XII.",
       },
     ],
   },
   teaching: {
     eyebrow: "Academics",
     title: "Teaching methodology",
-    lead: "Qualified faculty, continuously developed.",
+    lead: "Lessons that ask more of a child than memory — and stay with them after the bell.",
     blocks: [
       {
         type: "p",
-        text: "The school employs competent faculty members qualified to accomplish the mission and goals of the institution. When determining acceptable qualifications of its faculty, the school gives primary consideration to the educational qualifications and also attaches great importance to competence, effectiveness, and capacity, including related work experiences in the field, professional degrees and certifications, honors and awards, continuous documented excellence in teaching, or other demonstrated competencies and achievements that contribute to effective teaching and student learning outcomes.",
+        text: "At GD Goenka Public School Kupwara, teaching is planned for children who will live in Handwara, in Kashmir, and in a much wider world. Classes run in English. The curriculum follows CBSE. The method is ours: every period should leave a child a little more able to think, speak, try, and care.",
       },
       {
         type: "p",
-        text: "The management encourages the faculty to upgrade their specialization and pursue any research work to develop their talents further.",
+        text: "We do not treat a textbook as the lesson. Teachers open with a question, a problem, a story, or a task that the class can actually do. Students talk in pairs and small groups before they write. They explain their reasoning aloud. They get the chance to be wrong without being diminished, then to try again with clearer thinking. Homework is meant to practise what was understood in school, not to teach the chapter for the first time at the dining table.",
+      },
+      { type: "h2", text: "What a Goenkan hour looks like" },
+      {
+        type: "list",
+        items: [
+          "Clear learning intention so the class knows what a good hour of work looks like",
+          "Talk, reading, writing and making — not only copying from the board",
+          "Checking for understanding during the period, not only at the test",
+          "Support for children who need more time, and stretch for those who are ready",
+          "Respect in the room: listening, turn-taking, and language that is kind as well as accurate",
+        ],
+      },
+      { type: "h2", text: "Mind, body and character together" },
+      {
+        type: "p",
+        text: "Academic strength sits beside laboratories, the library, sport, and the stage. Science, mathematics, computers, robotics and English language work happen in rooms built for that purpose. On the same campus, children train on football, basketball, tennis and volleyball courts, and in the swimming pool. Assemblies and performances in the auditorium give them a public voice. Clubs and house life ask them to lead, to cooperate, and to represent something larger than themselves.",
+      },
+      {
+        type: "p",
+        text: "We want graduates who can sit an examination with composure — and who can also collaborate, create, communicate, and keep their nerve when the answer is not in the book. That is the practical meaning of Thrive. For Life. in our classrooms.",
+      },
+      { type: "h2", text: "Teachers as craftspeople" },
+      {
+        type: "p",
+        text: "Faculty are chosen for subject knowledge and for how they are with children. A good teacher here notices who is quiet, who is rushing, and who needs a different way in. Planning, marking and conversation with colleagues are part of the work, not extras. The school backs teachers to keep learning their craft — through observation, sharing of practice, and time to improve a unit after it has been taught.",
+      },
+      { type: "h2", text: "Parents in the loop" },
+      {
+        type: "p",
+        text: "Children thrive when home and school tell the same story. Parent–teacher meetings, the ERP portal, and an open line to the office exist so families know what is being taught, how a child is getting on, and what to practise at home. We ask parents to be partners in routines, reading, and character — not spectators of a report card.",
+      },
+      {
+        type: "quote",
+        text: "We prepare children for more than the next class. We prepare them to keep learning when no one is grading them.",
       },
     ],
   },
   calendar: {
     eyebrow: "Academics",
     title: "Academic calendar",
-    lead: "Official calendar will be published soon.",
+    lead: "Yearly events for 2026 — examinations, celebrations, and holidays as published by the school.",
     blocks: [
       {
-        type: "note",
-        text: "The academic calendar for the current session will be added here shortly. Please check back later, or confirm dates with the school office and the ERP parent portal.",
+        type: "p",
+        text: "The table below follows the official Yearly Events 2026 circular. Dates can shift with government orders or school notices; confirm with the office and the ERP parent portal when needed.",
+      },
+      {
+        type: "table",
+        headers: academicCalendarHeaders,
+        rows: academicCalendarRows,
       },
     ],
   },
@@ -179,28 +321,11 @@ export const pages: Record<string, PageContent> = {
     blocks: [
       {
         type: "p",
-        text: "At GD Goenka Kupwara, study tours are planned as focused learning journeys, not day trips for their own sake. Each outing is chosen to deepen what students are already exploring in class — history that can be walked through, science that can be observed up close, and industries that show how ideas become work.",
+        text: "At GD Goenka Kupwara, study tours are planned as focused learning journeys, not day trips for their own sake. Each outing is chosen to deepen what students are already exploring in class — history that can be walked through, science that can be observed up close, and landscape that can be trekked with teachers beside them.",
       },
       {
         type: "p",
-        text: "Students travel with teachers who prepare them beforehand and guide reflection afterwards. They learn to ask better questions, notice detail, and work as a group away from the familiar rhythm of the timetable.",
-      },
-      {
-        type: "h2",
-        text: "What students take away",
-      },
-      {
-        type: "list",
-        items: [
-          "Stronger links between classroom topics and real places",
-          "Confidence in new settings, with clear safety and supervision",
-          "Curiosity, observation skills and respectful public behaviour",
-          "Shared memories that build class spirit and belonging",
-        ],
-      },
-      {
-        type: "p",
-        text: "Destinations and dates are shared with families in advance, with attention to age group, distance and learning goals. For the latest schedule, please check school circulars or speak with the class teacher.",
+        text: "Students travel with escort staff who prepare them beforehand and stay with them until they are handed back to parents. They learn to ask better questions, notice detail, and work as a group away from the familiar rhythm of the timetable.",
       },
     ],
   },
@@ -307,30 +432,30 @@ export const pages: Record<string, PageContent> = {
   houses: {
     eyebrow: "Beyond academics",
     title: "School houses",
-    lead: "Four houses. One school. A life of belonging and contest.",
+    lead: "Compassion, Courage, Wisdom and Hope — four houses for the whole school, session 2026–2027.",
     blocks: [
       {
         type: "p",
-        text: "The student body is organised into four houses: Teresa House, Radha Krishna House, Tagore House and Vivekananda House. Each house includes students from primary through senior years, creating a vertically integrated community. Students are assigned a house on joining and remain in it throughout their school career.",
+        text: "GD Goenka Public School Kupwara runs an established house system. Every student belongs to one of four houses: Compassion (yellow), Courage (green), Wisdom (blue) and Hope (orange). The split is meant for team spirit, a place to belong, healthy competition, and a clear way to share duties.",
       },
       {
         type: "p",
-        text: "Each house is overseen by a Housemaster — an experienced educator who mentors students and selects House Captains, Assistant House Captains and Sports Captains. Captains organise events, lead peers and promote house spirit. Inter-house activities through the year foster healthy competition and camaraderie.",
+        text: "Houses plan the weekly morning assembly in turn and help keep discipline at arrival and departure. Teachers are allotted to each house so teams can be managed through the year. Students stay in their house; placement follows class roll numbers as published in the House System Planner.",
       },
     ],
   },
   clubs: {
     eyebrow: "Beyond academics",
-    title: "Clubs & integrated activities",
-    lead: "Subjects meeting in one task — so learning feels like the world.",
+    title: "Clubs",
+    lead: "Nine clubs for session 2026–27 — each with a teacher in-charge and a project students can finish, show, or serve with.",
     blocks: [
       {
         type: "p",
-        text: "Integrated activities provide a holistic and interconnected learning experience. By combining subjects into a single activity, students make connections across disciplines. A project on environmental science might include geography, biology and art.",
+        text: "Clubs at GD Goenka Public School Kupwara are for making something real: a model, a campaign, an exhibition, a match, a service, a performance. They are not talking shops. Students join a club, take a role in a group, and work towards an outcome that other people can see.",
       },
       {
         type: "p",
-        text: "These activities promote critical thinking, teamwork and problem-solving as students research, plan and present together. Club life draws on dance, drama, music, debate, photography, art and cultural work — the same fabric as Goenkan Pursuits.",
+        text: "The assignment of teachers and the activity plans follow the school’s club constitution for 2026–27, coordinated by Qurat Fayaz.",
       },
     ],
   },
@@ -341,11 +466,11 @@ export const pages: Record<string, PageContent> = {
     blocks: [
       {
         type: "p",
-        text: "Anti-skid tiles, antibacterial wall paints, soundproof classrooms, Wi-Fi, centralized air-conditioning, a semi-Olympic swimming pool, a 500+ seat auditorium and a food court. Sports courts for lawn tennis, basketball, volleyball and football at international standard.",
+        text: "Anti-skid tiles, antibacterial wall paints, soundproof classrooms, Wi-Fi, a semi-Olympic swimming pool, a 200-seat auditorium and a food court. Sports courts for lawn tennis, basketball, volleyball and football at international standard.",
       },
       {
         type: "p",
-        text: "Mandatory disclosure records 75 classrooms, laboratories including composite science, maths, robotics, English language and computer labs, a library, indoor and outdoor play, and a 350 sq. m auditorium.",
+        text: "Mandatory disclosure records 40 classrooms, laboratories including composite science, maths, robotics, English language and computer labs, a library, indoor and outdoor play, and a 350 sq. m auditorium.",
       },
     ],
   },
@@ -358,11 +483,10 @@ export const pages: Record<string, PageContent> = {
         type: "list",
         items: [
           "Wi-Fi enabled campus",
-          "Centralized air-conditioning",
           "Soundproof classrooms",
           "Anti-skid flooring and antibacterial wall paints",
           "Semi-Olympic swimming pool",
-          "500+ seat auditorium",
+          "200-seat auditorium",
           "Food court",
           "Robotics, language, science, maths and computer laboratories",
           "CCTV coverage of floors, classrooms, corridors and building perimeter",
@@ -540,14 +664,53 @@ export const pages: Record<string, PageContent> = {
       },
     ],
   },
-  bookList: {
+  curriculum: {
     eyebrow: "Academics",
-    title: "Book list",
-    lead: "Nursery to Class VIII — as published for 2026.",
+    title: "Curriculum",
+    lead: "A CBSE path from Nursery to Class XII — English-medium, broad, and built to last after school.",
     blocks: [
       {
         type: "p",
-        text: "The school publishes a book list for Nursery to Class 8. Download the official PDF from the school’s documents library, or collect a copy from the front desk.",
+        text: "The curriculum at GD Goenka Public School Kupwara is the map of what a child studies, in which order, and why. It follows the Central Board of Secondary Education. English is the language of the classroom. The aim is not a stuffed syllabus. It is a sequence that grows language, number, science, the arts, sport, and character together — so a student leaving Handwara can sit a board examination and also stand in the world with sense and heart.",
+      },
+      {
+        type: "p",
+        text: "How that map is taught is described on Teaching Methodology. When it is taught through the year is on the Academic Calendar. This page is the map itself.",
+      },
+      { type: "h2", text: "Early years" },
+      {
+        type: "p",
+        text: "Nursery and Kindergarten are for settling, speaking, listening, and play that has a purpose. Children learn to hold a pencil, hear sounds in words, count what they can see, move with control, and share a room with others. Stories, rhymes, outdoor time, and simple making sit beside the first steps in literacy and numeracy. The day is short enough to protect energy, and regular enough to feel safe.",
+      },
+      { type: "h2", text: "Primary" },
+      {
+        type: "p",
+        text: "In the primary years, reading, writing and mathematics take a firmer shape. Environmental studies open the window onto the living world and the neighbourhood. Art, music, and physical education are not extras; they train attention and confidence. Children begin to work as a group, to finish a task, and to explain what they did. Assessment is frequent and light enough to guide teaching, not only to rank a child.",
+      },
+      { type: "h2", text: "Middle school" },
+      {
+        type: "p",
+        text: "Subjects deepen. Languages, mathematics, science and social science are taught as disciplines with their own habits of mind. Laboratories for science, mathematics, computers, robotics and English language give students a place to try ideas with their hands, not only on paper. Subject enrichment, book fairs, house work and clubs sit on the same calendar as unit tests, so a child’s year is not only examination weeks.",
+      },
+      { type: "h2", text: "Secondary and senior secondary" },
+      {
+        type: "p",
+        text: "From Class IX onward the CBSE programme prepares students for board-level work: clearer writing, stronger reasoning, timed practice, and honest revision. Term examinations and internal assessments — multiple assessment, portfolios, subject enrichment — are part of that preparation, not a surprise at the end. We want young people who can handle a paper with composure, and who have also trained the body, the voice, and the habit of working with others.",
+      },
+      { type: "h2", text: "What sits around the syllabus" },
+      {
+        type: "list",
+        items: [
+          "Sport and swimming as weekly discipline, not a once-a-year sports day",
+          "Assemblies and the auditorium as places to speak in public",
+          "Clubs, houses and celebrations as practice in belonging and leadership",
+          "Study tours when they can make a chapter real — such as a planned night camp",
+          "A parent partnership so home and school keep the same expectations",
+        ],
+      },
+      {
+        type: "p",
+        text: "Prescribed books and notebooks for each class are issued by the school office for the session. Collect the current list from the front desk if you need it in print.",
       },
     ],
   },

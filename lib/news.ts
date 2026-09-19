@@ -1,5 +1,3 @@
-import { images } from "./images";
-
 export type NewsArticle = {
   slug: string;
   title: string;
@@ -8,86 +6,72 @@ export type NewsArticle = {
   excerpt: string;
   body: string[];
   image: string;
+  gallery?: string[];
 };
+
+const independence = [
+  "/images/news/independence-day/independence-1.jpeg",
+  "/images/news/independence-day/independence-2.jpeg",
+  "/images/news/independence-day/independence-3.jpeg",
+] as const;
+
+const medical = [
+  "/images/news/medical_checkup/medical-1.jpeg",
+  "/images/news/medical_checkup/medical-2.jpeg",
+  "/images/news/medical_checkup/medical-3.jpeg",
+] as const;
+
+const ptm = [
+  "/images/news/parent_teacher/ptm-1.jpeg",
+  "/images/news/parent_teacher/ptm-2.jpeg",
+  "/images/news/parent_teacher/ptm-3.jpeg",
+] as const;
 
 export const news: NewsArticle[] = [
   {
-    slug: "capacity-building-program",
-    title: "Capacity Building Program",
-    date: "April 2026",
-    category: "Faculty",
-    excerpt:
-      "GD Goenka organised a one-day capacity building program for teachers to impart 21st-century skills.",
-    body: [
-      "GD Goenka Public School Kupwara organised a one-day capacity building program for teachers, focused on 21st-century skills.",
-      "The session was designed to strengthen classroom practice, collaboration and the evolving role of the educator — so that every Goenkan classroom remains thoughtful, current and child-centred.",
-    ],
-    image: images.news.capacity,
-  },
-  {
-    slug: "baisakhi-vibes",
-    title: "Baisakhi Vibes at GD Goenka Kupwara",
-    date: "April 2026",
+    slug: "independence-day-2026",
+    title: "Independence Day on campus",
+    date: "August 2026",
     category: "Celebrations",
     excerpt:
-      "Joy on every face. Culture in every step. Students celebrate Baisakhi with energy, colour and pride.",
+      "Flag, song and a morning of belonging — Kupwara’s Goenkans mark 15 August together.",
     body: [
-      "Students at GD Goenka Kupwara celebrated Baisakhi with performances, colour and tradition — a day of music, movement and shared pride.",
-      "School celebrations are an essential part of campus life, helping children learn about culture while building community across classes and houses.",
+      "The school gathered on Independence Day with the tricolour at the centre of the morning. Students stood for the national anthem, then took their place in a short programme of song, speech and house pride.",
+      "Younger classes learned the day as a story of country and courage. Older students led the assembly, held the flag with care, and helped the campus feel like one school for an hour that is not about marks.",
+      "Photographs from the morning show the ground, the assembly, and children in uniform around the flag — ordinary school life, given to a national day.",
     ],
-    image: images.news.baisakhi,
+    image: independence[0],
+    gallery: [...independence],
   },
   {
-    slug: "sdrf-disaster-response-training",
-    title: "Goenkans train to save lives with SDRF",
-    date: "April 2026",
-    category: "Skill Building",
+    slug: "medical-checkup-2026",
+    title: "School medical checkup",
+    date: "2026",
+    category: "Health",
     excerpt:
-      "Students step into real disaster-response training with J&K SDRF — learning to act fast, stay calm and protect lives.",
+      "A quiet, thorough health day — so every child is seen, not only when they feel unwell.",
     body: [
-      "Students at GD Goenka Kupwara trained with the J&K State Disaster Response Force, practising how to act quickly, stay calm and protect lives.",
-      "The experience is part of the school’s wider commitment to skill-based learning — real preparation for real situations, beyond the textbook.",
+      "The infirmary opened for a planned medical checkup. Children came class by class. Height, vision, a calm conversation with the doctor: the point is to notice small things early, and to make the clinic a familiar room, not a place of fear.",
+      "Parents were informed in advance. Staff stayed with each group. The school doctor works through the school day; this checkup sits beside that everyday care.",
+      "The pictures record a working campus — waiting, examining, talking — the unglamorous work of keeping children well enough to learn.",
     ],
-    image: images.news.sdrf,
+    image: medical[0],
+    gallery: [...medical],
   },
   {
-    slug: "international-childrens-book-day-2026",
-    title: "International Children's Book Day — 2026",
-    date: "April 2026",
-    category: "Literacy",
+    slug: "parent-teacher-meeting-2026",
+    title: "Parent–teacher meeting",
+    date: "2026",
+    category: "Community",
     excerpt:
-      "From stories that spark imagination to laughter-filled moments, Grade 2 bookworms shone bright.",
+      "Families and teachers sat together over books, habits and the next stretch of the term.",
     body: [
-      "Grade 2 students marked International Children's Book Day 2026 with stories, conversation and the simple joy of reading together.",
-      "The school’s philosophy is to encourage not just reading, but a lasting love for learning — and days like these make that visible.",
+      "A parent–teacher meeting is not a performance. It is a table, a file, and an honest account of how a child is working — and where they need a steadier hand at home and in class.",
+      "Teachers in Kupwara met families through the day. Conversations covered reading, attendance, behaviour and the small wins that do not always show on a report. Parents left with a clearer picture of the weeks ahead.",
+      "The school asks families to be present in this way more than once a year. A child does better when the two rooms they live in — home and school — are speaking.",
     ],
-    image: images.news.bookDay,
-  },
-  {
-    slug: "sof-olympiad-2024",
-    title: "SOF Olympiad 2024",
-    date: "2024",
-    category: "Achievement",
-    excerpt:
-      "Abu Hammad Ilahi of Grade 1 made the school immensely proud by securing International Rank 1 in IEO 2024.",
-    body: [
-      "Abu Hammad Ilahi of Grade 1 secured International Rank 1 in the SOF International English Olympiad (IEO) 2024.",
-      "The school community celebrates this achievement as a reflection of curiosity, consistency and the joy of language.",
-    ],
-    image: images.news.olympiad,
-  },
-  {
-    slug: "north-india-karate-championship-2024",
-    title: "North India Karate Championship 2024",
-    date: "2024",
-    category: "Sports",
-    excerpt:
-      "Sahil Javid of Grade 4 and Numaan Malik of Grade 2 won gold medals, securing 1st positions.",
-    body: [
-      "Sahil Javid of Grade 4 and Numaan Malik of Grade 2 won gold medals at the North India Karate Championship 2024, securing first positions.",
-      "Sport at GD Goenka is treated as essential formation — discipline, courage and composure, practised every day.",
-    ],
-    image: images.news.karate,
+    image: ptm[0],
+    gallery: [...ptm],
   },
 ];
 

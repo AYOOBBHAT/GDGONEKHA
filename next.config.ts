@@ -20,6 +20,11 @@ const nextConfig: NextConfig = {
         destination: "/about",
         permanent: true,
       },
+      {
+        source: "/book-list",
+        destination: "/curriculum",
+        permanent: true,
+      },
     ];
   },
   async headers() {

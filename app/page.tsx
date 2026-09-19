@@ -10,8 +10,14 @@ import { PrincipalMessage } from "@/components/home/PrincipalMessage";
 import { QuickActions } from "@/components/home/QuickActions";
 import { SchoolStats } from "@/components/home/SchoolStats";
 import { WhyGoenka } from "@/components/home/WhyGoenka";
+import { getHomeCirculars, getHomeNewsletters } from "@/lib/circulars";
 
-export default function HomePage() {
+export default async function HomePage() {
+  const [circulars, newsletters] = await Promise.all([
+    getHomeCirculars(),
+    getHomeNewsletters(),
+  ]);
+
   return (
     <>
       <Hero />
@@ -19,7 +25,7 @@ export default function HomePage() {
       <WhyGoenka />
       <Facilities />
       <Philosophy />
-      <BulletinBoard />
+      <BulletinBoard circulars={circulars} newsletters={newsletters} />
       <NewsSection />
       <PrincipalMessage />
       <SchoolStats />

@@ -85,9 +85,11 @@ function Blocks({ blocks }: { blocks: ContentBlock[] }) {
 
 export function InnerPage({
   content,
+  before,
   children,
 }: {
   content: PageContent;
+  before?: React.ReactNode;
   children?: React.ReactNode;
 }) {
   return (
@@ -98,6 +100,7 @@ export function InnerPage({
         lead={content.lead}
       />
       <Container className="py-10 sm:py-14 md:py-20">
+        {before}
         <Blocks blocks={content.blocks} />
         {children}
       </Container>

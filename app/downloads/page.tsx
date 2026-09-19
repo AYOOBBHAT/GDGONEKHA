@@ -1,86 +1,87 @@
+import { ComingSoonCard } from "@/components/downloads/ComingSoonCard";
+import { PdfDownloadCard } from "@/components/downloads/PdfDownloadCard";
 import { PageHero } from "@/components/layout/PageHero";
 import { Container } from "@/components/ui/Container";
+import { getHomeNewsletters } from "@/lib/circulars";
+import {
+  getDateSheets,
+  getSummerAssignments,
+  getWinterAssignments,
+} from "@/lib/downloads";
 import { pageMeta } from "@/lib/seo";
-import { site } from "@/lib/site";
-
-const items = [
-  {
-    id: "admit-card",
-    title: "Admit Card",
-    href: site.links.admitCard,
-    text: "Download admit cards from the school portal.",
-  },
-  {
-    id: "summer-assignment",
-    title: "Summer Assignment",
-    href: "https://www.gdgoenkabaramulla.com/downloads.php?main_heading=Summer%20Assignment",
-    text: "Seasonal assignments as issued by the academic office.",
-  },
-  {
-    id: "winter-assignment",
-    title: "Winter Assignment",
-    href: "https://www.gdgoenkabaramulla.com/downloads.php?main_heading=Winter%20Assignment",
-    text: "Winter work published for the relevant classes.",
-  },
-  {
-    id: "worksheets",
-    title: "Worksheets",
-    href: "https://www.gdgoenkabaramulla.com/downloads.php?main_heading=Worksheets",
-    text: "Practice worksheets released through the downloads desk.",
-  },
-  {
-    id: "web-lesson",
-    title: "Web Lesson",
-    href: "https://www.gdgoenkabaramulla.com/downloads.php?main_heading=Web%20Lesson",
-    text: "Web lessons when published by faculty.",
-  },
-  {
-    id: "date-sheet",
-    title: "Date Sheet",
-    href: "https://www.gdgoenkabaramulla.com/downloads.php?main_heading=Date%20Sheet",
-    text: "Examination date sheets for the current term.",
-  },
-  {
-    id: "newsletter",
-    title: "Newsletter",
-    href: "https://www.gdgoenkabaramulla.com/downloads.php?main_heading=Newsletter",
-    text: "School newsletters and circular archives.",
-  },
-];
 
 export const metadata = pageMeta(
   "Downloads",
-  "Admit cards, assignments, worksheets, date sheets and newsletters from GD Goenka Public School Kupwara.",
+  "Admit cards, assignments, date sheets and newsletters from GD Goenka Public School Kupwara.",
   "/downloads",
 );
 
-export default function Page() {
+export default async function Page() {
+  const [summer, winter, dateSheets, newsletters] = await Promise.all([
+    getSummerAssignments(),
+    getWinterAssignments(),
+    getDateSheets(),
+    getHomeNewsletters(),
+  ]);
+
   return (
     <>
       <PageHero
         eyebrow="Resources"
         title="Downloads"
-        lead="Official files are hosted on the school’s document desk. Open the item you need."
+        lead="Files and notices published by the school. Empty items will fill in from the studio as they are added."
       />
       <Container className="grid gap-4 py-14 md:grid-cols-2 md:py-20">
-        {items.map((item) => (
-          <article
-            id={item.id}
-            key={item.id}
-            className="scroll-mt-28 rounded-3xl border border-line bg-white p-6"
-          >
-            <h2 className="text-xl font-semibold tracking-tight">{item.title}</h2>
-            <p className="mt-2 text-sm text-muted">{item.text}</p>
-            <a
-              href={item.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-4 inline-block text-sm font-medium"
-            >
-              Open resource →
-            </a>
-          </article>
-        ))}
+        <ComingSoonCard
+          id="admit-card"
+          title="Admit Card"
+          text="Admit cards for this campus will be published here."
+        />
+        <PdfDownloadCard
+          id="summer-assignment"
+          title="Summer Assignment"
+          text="Seasonal assignments as issued by the academic office."
+          files={summer}
+        />
+        <PdfDownloadCard
+          id="winter-assignment"
+          title="Winter Assignment"
+          text="Winter work published for the relevant classes."
+          files={winter}
+        />
+        <PdfDownloadCard
+          id="date-sheet"
+          title="Date Sheet"
+          text="Examination date sheets for the current term."
+          files={dateSheets}
+        />
+        <article
+          id="newsletter"
+          className="scroll-mt-28 rounded-3xl border border-line bg-white p-6 md:col-span-2"
+        >
+          <h2 className="text-xl font-semibold tracking-tight">Newsletter</h2>
+          {newsletters.length ? (
+            <ul className="mt-4 space-y-5">
+              {newsletters.map((item) => (
+                <li key={item.id} className="border-t border-line pt-4 first:border-0 first:pt-0">
+                  <h3 className="text-lg font-semibold tracking-tight">
+                    {item.heading}
+                  </h3>
+                  <p className="mt-2 text-sm leading-relaxed text-muted">
+                    {item.text}
+                  </p>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <>
+              <p className="mt-2 text-sm text-muted">
+                Heading and text are added in the studio under Newsletter.
+              </p>
+              <p className="mt-4 text-sm font-medium text-ink">Coming soon.</p>
+            </>
+          )}
+        </article>
       </Container>
     </>
   );

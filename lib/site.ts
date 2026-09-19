@@ -52,8 +52,10 @@ export const site = {
   people: {
     founder: "Sh. Anjani Kumar Goenka",
     founderTitle: "Chairman, GD Goenka Group",
-    director: "Raja Zubair Ahmed",
-    directorTitle: "Director",
+    director: "Dr. Khalid Maqbool",
+    directorTitle: "Director, GD Goenka Public School Handwara",
+    managingDirector: "Mr. Imtiyaz Maqbool Bhat",
+    managingDirectorTitle: "Managing Director, GD Goenka Public School Handwara",
     principal: "Mrs Jasmine Rafiq Mir",
     principalTitle: "Principal, GD Goenka Public School Kupwara",
     coordinator: "Coordinator",

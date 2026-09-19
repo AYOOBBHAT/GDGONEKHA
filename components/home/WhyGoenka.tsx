@@ -11,7 +11,7 @@ export function WhyGoenka() {
         <Reveal>
           <SectionHeading
             title="Why GD Goenka?"
-            subtitle="More than academics. A foundation for life."
+            subtitle="Eight ways we teach in Kupwara — so a child leaves ready for more than a mark sheet."
           />
         </Reveal>
         <div className="mt-12 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">

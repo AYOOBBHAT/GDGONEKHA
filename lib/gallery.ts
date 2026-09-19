@@ -46,30 +46,16 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "activity-4",
-    title: "House Activities",
-    category: "house",
-    image: activityPhotos[3],
-    alt: "Students gathered for a school celebration at GD Goenka Kupwara",
-  },
-  {
-    id: "activity-5",
-    title: "Outdoor Activities",
-    category: "outdoor",
-    image: activityPhotos[4],
-    alt: "Outdoor school activity at GD Goenka Public School Kupwara",
-  },
-  {
-    id: "activity-6",
     title: "Class Activities",
     category: "class",
-    image: activityPhotos[5],
+    image: activityPhotos[3],
     alt: "Learning activity at GD Goenka Public School Kupwara",
   },
   {
-    id: "activity-7",
+    id: "activity-5",
     title: "School life",
     category: "outdoor",
-    image: activityPhotos[6],
+    image: activityPhotos[4],
     alt: "Campus life at GD Goenka Public School Kupwara",
   },
 ];

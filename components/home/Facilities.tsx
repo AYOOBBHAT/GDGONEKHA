@@ -20,7 +20,7 @@ const tiles = [
   {
     title: "Learning in motion",
     caption: "Activity, culture and character, every week",
-    image: images.activities[3],
+    image: images.gallery.sports2,
     className: "min-h-[200px] sm:min-h-[240px]",
   },
   {
@@ -39,7 +39,7 @@ export function Facilities() {
           <SectionHeading
             eyebrow="Campus"
             title="A campus built with intention."
-            subtitle="Soundproof classrooms, Wi-Fi, central air-conditioning, a 500+ seat auditorium, a food court, and sports infrastructure of international standard — including a semi-Olympic swimming pool."
+            subtitle="Soundproof classrooms, Wi-Fi, a 200-seat auditorium, a food court, and sports infrastructure of international standard — including a semi-Olympic swimming pool."
           />
         </Reveal>
         <div className="mt-12 grid gap-4 md:grid-cols-3">

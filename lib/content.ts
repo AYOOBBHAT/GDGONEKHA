@@ -57,7 +57,7 @@ export const mpdGeneral = [
 
 export const mpdInfrastructure = [
   ["Total campus area", "15,175.71 sq. m"],
-  ["No. and size of classrooms", "75 (44.80 sq. m)"],
+  ["No. and size of classrooms", "40 (44.80 sq. m)"],
   ["Occupied classrooms", "30"],
   ["Vacant classrooms", "50"],
   ["Staff rooms", "05 (54 sq. m each)"],
@@ -74,7 +74,7 @@ export const mpdInfrastructure = [
   ["English language lab", "01"],
   ["Computer lab", "01"],
   ["Library", "01"],
-  ["School auditorium", "350 sq. m, capacity 500+"],
+  ["School auditorium", "350 sq. m, capacity 200"],
   ["Internet facility", "Yes"],
   ["Girls' toilets", "36"],
   ["Boys' toilets", "36"],

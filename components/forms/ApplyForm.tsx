@@ -20,8 +20,10 @@ const classes = [
 
 export function ApplyForm({
   variant = "admission",
+  initialRole = "",
 }: {
   variant?: "admission" | "career";
+  initialRole?: string;
 }) {
   const [sentUrl, setSentUrl] = useState<string | null>(null);
 
@@ -108,7 +110,12 @@ export function ApplyForm({
       ) : (
         <>
           <Field label="Full name" name="name" required />
-          <Field label="Position applying for" name="role" required />
+          <Field
+            label="Position applying for"
+            name="role"
+            required
+            defaultValue={initialRole}
+          />
         </>
       )}
       <Field label="Phone" name="phone" type="tel" required />
@@ -140,11 +147,13 @@ function Field({
   name,
   type = "text",
   required,
+  defaultValue,
 }: {
   label: string;
   name: string;
   type?: string;
   required?: boolean;
+  defaultValue?: string;
 }) {
   return (
     <label className="block text-sm font-medium">
@@ -153,6 +162,7 @@ function Field({
         name={name}
         type={type}
         required={required}
+        defaultValue={defaultValue}
         className="mt-2 w-full rounded-2xl border border-line bg-white px-4 py-3 text-base font-normal"
       />
     </label>

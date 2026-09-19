@@ -5,7 +5,7 @@ import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
   "Academics",
-  "Teaching methodology, academic calendar and book list at GD Goenka Public School Kupwara.",
+  "Teaching methodology, academic calendar and curriculum at GD Goenka Public School Kupwara.",
   "/academics",
 );
 
@@ -17,8 +17,8 @@ export default function Page() {
         <ButtonLink href="/academic-calendar" variant="secondary">
           Academic calendar
         </ButtonLink>
-        <ButtonLink href="/book-list" variant="secondary">
-          Book list
+        <ButtonLink href="/curriculum" variant="secondary">
+          Curriculum
         </ButtonLink>
       </div>
     </InnerPage>

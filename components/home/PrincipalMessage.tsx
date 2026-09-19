@@ -18,13 +18,15 @@ export function PrincipalMessage() {
         </Reveal>
         <Reveal delay={0.1} className="lg:col-span-7">
           <p className="eyebrow">A message from the Principal</p>
-          <h2 className="mt-4 max-w-[16ch] text-[1.85rem] font-semibold leading-[1.12] tracking-[-0.04em] sm:text-4xl md:text-5xl">
-            Leadership that puts every child first.
+          <h2 className="mt-4 max-w-[18ch] text-[1.85rem] font-semibold leading-[1.12] tracking-[-0.04em] sm:text-4xl md:text-5xl">
+            We prepare them to thrive—throughout life.
           </h2>
           <p className="mt-5 max-w-xl text-[0.95rem] text-muted sm:mt-6 sm:text-base">
-            The Principal’s full message will be published here soon. Until then,
-            reach the school office for guidance, or explore Know Us for more
-            about our vision and campus.
+            It is my privilege and honor to welcome you to GD Goenka School, a
+            place where education goes beyond classrooms, textbooks, and
+            examinations. Our vision is to nurture young minds who are confident,
+            compassionate, curious, and prepared to contribute meaningfully to
+            the world.
           </p>
           <p className="mt-6 text-sm font-medium">
             {site.people.principal}

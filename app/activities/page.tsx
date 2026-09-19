@@ -10,8 +10,8 @@ const items = [
   { href: "/celebrations", title: "Celebrations", text: "Festivals, national days and the joy of belonging." },
   { href: "/sports", title: "Sports", text: "Football, basketball, tennis, swimming and athletics." },
   { href: "/goenkan-pursuits", title: "Goenkan Pursuits", text: "Art, counselling, values and skill." },
-  { href: "/school-houses", title: "School Houses", text: "Teresa, Radha Krishna, Tagore, Vivekananda." },
-  { href: "/clubs", title: "Clubs", text: "Integrated activities across disciplines." },
+  { href: "/school-houses", title: "School Houses", text: "Compassion, Courage, Wisdom and Hope." },
+  { href: "/clubs", title: "Clubs", text: "Nine clubs for 2026–27, each with a teacher in-charge and a real project." },
 ];
 
 export const metadata = pageMeta(

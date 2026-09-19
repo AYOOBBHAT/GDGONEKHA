@@ -15,7 +15,7 @@ export function NewsSection() {
           <Reveal>
             <SectionHeading
               eyebrow="News"
-              title="What's happening at Goenka"
+              title="Life on campus"
             />
           </Reveal>
           <Reveal>
@@ -27,7 +27,7 @@ export function NewsSection() {
             </Link>
           </Reveal>
         </div>
-        <div className="mt-8 flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-hint pb-3 md:mt-10 md:grid md:grid-cols-2 md:overflow-visible md:pb-0 xl:grid-cols-4">
+        <div className="mt-8 flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-hint pb-3 md:mt-10 md:grid md:grid-cols-2 md:overflow-visible md:pb-0 xl:grid-cols-3">
           {featured.map((article, index) => (
             <Reveal
               key={article.slug}

@@ -4,10 +4,10 @@ export const whyFeatures = [
     number: "01",
     title: "Activity Based Learning",
     description:
-      "Hands-on tasks, projects and experiments so children explore, apply and remember — not just recall.",
+      "Children learn by making, testing and talking — so ideas stick after the lesson ends.",
     body: [
-      "Activity-Based Learning (ABL) is an integral part of the school's teaching approach, focusing on engaging students through hands-on activities and practical experiences.",
-      "This method allows students to participate in their learning, encouraging them to explore, experiment and apply concepts in real-life scenarios. Interactive tasks — group projects, experiments and problem-solving — help foster critical thinking and creativity.",
+      "At GD Goenka Kupwara, a topic is not finished when the board is wiped. Students try it with their hands: a model, a short experiment, a group task, a walk around campus that makes the idea visible.",
+      "Teachers plan work that asks children to notice, decide and explain. That habit of doing — rather than waiting to be told — builds curiosity and a memory that lasts beyond the next test.",
     ],
   },
   {
@@ -15,10 +15,10 @@ export const whyFeatures = [
     number: "02",
     title: "Student Focused Approach",
     description:
-      "Each child’s needs, interests and pace sit at the centre of teaching, feedback and care.",
+      "Teaching bends toward the child: how they learn, what they need, and when they are ready.",
     body: [
-      "The school prioritises a student-focused approach, ensuring that each student's unique needs, interests and learning styles are at the centre of teaching.",
-      "A supportive environment, personalised instruction, regular feedback and strong teacher–student relationships help children take ownership of their learning — setting goals, asking questions and growing with confidence.",
+      "No two children arrive with the same pace or the same questions. Classrooms here are planned so a quieter learner is not lost, and a quicker one is not left waiting.",
+      "Teachers watch, listen and adjust. Feedback is regular and kind. The aim is a child who knows they are seen — and who can take the next step without fear of getting it wrong.",
     ],
   },
   {
@@ -26,10 +26,10 @@ export const whyFeatures = [
     number: "03",
     title: "Multi-Skill Foundation Courses",
     description:
-      "Communication, creativity, technical skill and character — built together, not in isolation.",
+      "Speaking, making, thinking and working with others — practised as one education, not extras.",
     body: [
-      "Multi-Skill Foundation Courses are designed to provide a well-rounded education by developing a broad range of skills essential for personal and academic growth.",
-      "These courses integrate communication, critical thinking, creativity and technical skill, offering students opportunities to explore different interests and talents.",
+      "A Goenkan day is meant to stretch more than one muscle. Alongside books, students practise how to speak clearly, solve a problem in a group, and try a craft or a tool they have not used before.",
+      "These foundation courses sit inside the week, not after it. They help children discover what they enjoy, and they give every class a chance to shine in a different way.",
     ],
   },
   {
@@ -37,10 +37,10 @@ export const whyFeatures = [
     number: "04",
     title: "Artificial Intelligence",
     description:
-      "Age-appropriate AI, robotics and coding — so technology is understood, not merely consumed.",
+      "Coding, robotics and simple AI, taught with care — so tools are understood, not just used.",
     body: [
-      "The school integrates Artificial Intelligence into the curriculum to prepare students for the future by understanding and using contemporary technology.",
-      "AI programmes introduce the basics of machine learning, robotics, data analysis and coding through hands-on projects, making complex ideas accessible and showing how technology shapes daily life and industry.",
+      "Technology on this campus is a subject to be opened, not a screen to hide behind. Age-wise work in coding, robotics and the first ideas of AI lets students see how machines follow instructions — and where a human still has to think.",
+      "Projects stay practical: a small program, a moving model, a question about data. The point is confidence with new tools, and the judgement to use them well.",
     ],
   },
   {
@@ -48,11 +48,10 @@ export const whyFeatures = [
     number: "05",
     title: "Professional & Trained Teachers",
     description:
-      "Qualified faculty, continuously developed — competence, care and classroom craft.",
+      "Faculty chosen for subject strength and classroom care — and kept learning themselves.",
     body: [
-      "The school employs competent faculty members qualified to accomplish the mission and goals of the institution.",
-      "When determining qualifications, the school gives primary consideration to educational credentials and also to competence, effectiveness and capacity — including related work experience, professional certifications, documented excellence in teaching and other demonstrated contributions to student learning.",
-      "Management encourages faculty to upgrade specialisation and pursue research that develops their practice further.",
+      "Children meet teachers who know their subject and who know how to hold a room. Appointments look at qualification, classroom skill and the patience to work with young people in Kupwara’s own setting.",
+      "The school expects staff to keep growing — through workshops, sharing of practice, and time to improve how a lesson is taught. A strong adult in the classroom is the quiet centre of everything else.",
     ],
   },
   {
@@ -60,10 +59,10 @@ export const whyFeatures = [
     number: "06",
     title: "Progressive & Innovative Curriculum",
     description:
-      "An integrated, CBSE-aligned curriculum that connects disciplines and strengthens concept formation.",
+      "CBSE at the core, with units that cross subjects so children see how knowledge joins up.",
     body: [
-      "The school advocates an integrated curriculum in which a unit is taught across disciplines, helping children make connections. Activities, project work, presentations, educational trips and guest lectures are indispensable so that concept formation is strong and lasting.",
-      "The framework also holds the school’s monthly weeks — environment, literary, cultural, science, cosmic and more. The syllabus for subjects is as prescribed by CBSE.",
+      "The syllabus follows CBSE. How it is taught is planned so a history story can meet a map, a science idea can meet a making task, and a language lesson can meet a performance.",
+      "Project work, trips, talks and themed weeks in the year give the timetable a pulse. Concepts are meant to be formed once, then used again — not packed in for a single paper and forgotten.",
     ],
   },
   {
@@ -71,10 +70,10 @@ export const whyFeatures = [
     number: "07",
     title: "Skill Based Learning",
     description:
-      "Practical skills for real situations, sitting alongside academic knowledge — not instead of it.",
+      "What a child can do — explain, collaborate, solve — is taught beside what they can recall.",
     body: [
-      "The school emphasises skill-based learning, focusing on practical skills that are crucial for personal and professional development.",
-      "Students apply knowledge through hands-on activities, real-world projects and collaborative tasks — integrating critical thinking, communication, teamwork and problem-solving.",
+      "Marks matter. So does the ability to work with someone else, to finish a task, and to say what you mean. Skill-based work is built into lessons so practice is not saved for a club after school.",
+      "Students plan, try, correct and present. Those habits travel with them — into the next class, and later into work and civic life.",
     ],
   },
   {
@@ -82,13 +81,14 @@ export const whyFeatures = [
     number: "08",
     title: "Performing Arts",
     description:
-      "Drama, music, dance and theatre — expression, collaboration and a fuller sense of self.",
+      "Music, dance, drama and stagecraft — a place for voice, nerve and joy.",
     body: [
-      "Performing arts play a vital role in holistic development. Programmes in drama, music, dance and theatre give students opportunities to express themselves creatively and confidently.",
-      "Through the performing arts, students learn to communicate, work together and build self-esteem, while exploring culture, emotion and perspective.",
+      "The arts are part of how this school teaches presence. A child who sings, acts or dances learns to stand in front of others, to listen, and to share a story that is not only on the page.",
+      "Rehearsals and performances sit through the year. They build confidence without asking every student to be the same kind of performer — there is room for the lead, and for the one who finds their place in the chorus.",
     ],
   },
 ];
+
 
 export const facilitiesShowcase = [
   {
@@ -98,7 +98,7 @@ export const facilitiesShowcase = [
   },
   {
     title: "Auditorium",
-    caption: "500+ seat auditorium for assembly, performance and lecture",
+    caption: "200-seat auditorium for assembly, performance and lecture",
     placeholder: "Auditorium",
   },
   {
@@ -128,7 +128,7 @@ export const facilitiesShowcase = [
   },
   {
     title: "Campus comfort",
-    caption: "Wi-Fi enabled campus, central air-conditioning and food court",
+    caption: "Wi-Fi enabled campus and food court",
     placeholder: "Campus",
   },
 ];
@@ -141,13 +141,8 @@ export const schoolStats = [
   },
   {
     label: "Learning spaces",
-    value: "75 classrooms",
+    value: "40 classrooms",
     detail: "Soundproof rooms with anti-skid flooring and antibacterial finishes",
-  },
-  {
-    label: "Assembly",
-    value: "500+ seats",
-    detail: "A spacious auditorium for performance, lecture and gathering",
   },
   {
     label: "Pathway",

@@ -23,6 +23,7 @@ export const mainNav: NavItem[] = [
       { label: "Mandatory Public Disclosure", href: "/know-us/mandatory-disclosure" },
       { label: "Principal's Message", href: "/principal-message" },
       { label: "Director's Message", href: "/director-message" },
+      { label: "Managing Director's Message", href: "/managing-director-message" },
     ],
   },
   {
@@ -31,7 +32,7 @@ export const mainNav: NavItem[] = [
     children: [
       { label: "Teaching Methodology", href: "/teaching-methodology" },
       { label: "Academic Calendar", href: "/academic-calendar" },
-      { label: "Book List", href: "/book-list" },
+      { label: "Curriculum", href: "/curriculum" },
     ],
   },
   {
@@ -62,8 +63,6 @@ export const mainNav: NavItem[] = [
       { label: "Admit Card", href: "/downloads#admit-card" },
       { label: "Summer Assignment", href: "/downloads#summer-assignment" },
       { label: "Winter Assignment", href: "/downloads#winter-assignment" },
-      { label: "Worksheets", href: "/downloads#worksheets" },
-      { label: "Web Lesson", href: "/downloads#web-lesson" },
       { label: "Date Sheet", href: "/downloads#date-sheet" },
       { label: "Newsletter", href: "/downloads#newsletter" },
     ],
@@ -109,7 +108,7 @@ export const footerNav = {
   academics: [
     { label: "Teaching Methodology", href: "/teaching-methodology" },
     { label: "Academic Calendar", href: "/academic-calendar" },
-    { label: "Book List", href: "/book-list" },
+    { label: "Curriculum", href: "/curriculum" },
   ],
   admissions: [
     { label: "Procedure", href: "/admissions/procedure" },
@@ -122,6 +121,7 @@ export const footerNav = {
     { label: "Gallery", href: "/gallery" },
     { label: "News", href: "/news" },
     { label: "Career", href: "/career" },
+    { label: "Content studio", href: "/studio" },
     { label: "ERP Login", href: "https://erp.youthconnekt.in", external: true },
   ],
 };

@@ -11,10 +11,11 @@ const routes = [
   "/know-us/mandatory-disclosure/staff",
   "/principal-message",
   "/director-message",
+  "/managing-director-message",
   "/academics",
   "/teaching-methodology",
   "/academic-calendar",
-  "/book-list",
+  "/curriculum",
   "/activities",
   "/study-tours",
   "/celebrations",
@@ -37,7 +38,6 @@ const routes = [
   "/gallery",
   "/news",
   "/contact",
-  "/privacy",
   "/support",
 ];
 
