@@ -38,7 +38,6 @@ export const site = {
     admitCard: "https://www.gdgoenkabaramulla.com/admit_Card.php",
     bookList:
       "https://www.gdgoenkabaramulla.com/documents/BOOK_LIST_2026_CL_NURSERY_TO_8TH_new.pdf",
-    prospectus: "https://www.gdgoenkabaramulla.com/eprospectus.php",
     transferCertificate:
       "https://www.gdgoenkabaramulla.com/Transfer_Certificate.php",
     circularPdf:

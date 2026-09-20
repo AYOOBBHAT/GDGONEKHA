@@ -645,7 +645,7 @@ export const pages: Record<string, PageContent> = {
     blocks: [
       {
         type: "p",
-        text: "The official e-prospectus is published by the school. For the latest file, use the prospectus link on the existing school portal, or request a copy from the admissions desk at gdgoenkahnd@gmail.com.",
+        text: "The official e-prospectus for this campus is not published yet. You may request a copy from the admissions desk at gdgoenkahnd@gmail.com when it is available.",
       },
     ],
   },
