@@ -32,6 +32,7 @@ export const images = {
   campusPortrait: activityPhotos[3],
   about: activityPhotos[2],
   principal: "/images/principal/principal.jpg",
+  director: "/images/director.jpeg",
   founder: "/images/founder/our_founder.png",
   coordinator: "/images/coordinator/coordinator.jpg",
   management: `${origin}/img/SCHOOL%20MANAGEMENT%20COMMITTEE_page-0001.jpg`,

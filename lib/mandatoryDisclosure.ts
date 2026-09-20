@@ -26,22 +26,30 @@ export function disclosureHref(filename: string) {
 export const documentsAndInformation: DisclosureRow[] = [
   {
     information:
+      "Copies of Affiliation / upgradation letter and recent extension of Affiliation, if any",
+    files: [],
+  },
+  {
+    information:
       "Copies of Societies / Trust / Company Registration / Renewal Certificate, as applicable",
-    files: [{ filename: "Registration .pdf", label: "Registration Certificate" }],
+    files: [{ filename: "Trust..pdf", label: "Trust Certificate" }],
+  },
+  {
+    information:
+      "Copy of No Objection Certificate (NOC) issued, if applicable, by the State Govt./UT",
+    files: [],
   },
   {
     information:
       "Copies of Recognition Certificate under RTE Act, 2009, and its renewal if applicable",
-    files: [],
+    files: [
+      { filename: "Registration .pdf", label: "Recognition Certificate" },
+    ],
   },
   {
     information:
       "Copy of valid Building Safety Certificate as per the National Building Code",
     files: [
-      {
-        filename: "building certificate.jpeg",
-        label: "Building Safety Certificate",
-      },
       {
         filename: "R&B..pdf",
         label: "R&B Building Safety Certificate",
@@ -54,16 +62,13 @@ export const documentsAndInformation: DisclosureRow[] = [
     files: [{ filename: "Fire emergency..pdf", label: "Fire and Emergency Certificate" }],
   },
   {
+    information:
+      "Copy of the self certification submitted by the school for Affiliation / Upgradation / Extension of Affiliation",
+    files: [],
+  },
+  {
     information: "Copies of valid Water, Health and Sanitation Certificates",
     files: [{ filename: "Sanitary.pdf", label: "Sanitation Certificate" }],
-  },
-  {
-    information: "Lease Certificate",
-    files: [{ filename: "Lease..pdf", label: "Lease Certificate" }],
-  },
-  {
-    information: "List of School Management Committee (SMC) / Managing Body",
-    files: [{ filename: "SMC.pdf", label: "School Management Committee" }],
   },
 ];
 
@@ -74,7 +79,11 @@ export const resultAndAcademics: DisclosureRow[] = [
   },
   {
     information: "Annual academic calendar / yearly events",
-    files: [],
+    files: [{ filename: "Events 2026.pdf", label: "Yearly Events 2026" }],
+  },
+  {
+    information: "List of School Management Committee (SMC)",
+    files: [{ filename: "SMC.pdf", label: "School Management Committee" }],
   },
   {
     information: "List of Parent Teacher Association (PTA)",
@@ -87,28 +96,71 @@ export const resultAndAcademics: DisclosureRow[] = [
   },
   {
     information: "POCSO Committee",
-    files: [],
-  },
-  {
-    information: "Staff details",
-    files: [
-      {
-        href: "/know-us/mandatory-disclosure/staff",
-        label: "Staff",
-      },
-    ],
+    files: [{ filename: "POSCO.pdf", label: "POCSO Committee" }],
   },
   {
     information: "House System Planner",
-    files: [],
+    files: [
+      { filename: "House System  Planner.pdf", label: "House System Planner" },
+    ],
   },
 ];
 
-/** Extracted from public/documents/mandatory-disclosure/Staff.pdf */
+export type InfrastructureRow = {
+  information: string;
+  details?: string;
+  href?: string;
+  files?: DisclosureFile[];
+};
+
+export const schoolInfrastructure: InfrastructureRow[] = [
+  {
+    information: "Total campus area of the school (in square mtr)",
+    details: "15,175.71",
+  },
+  {
+    information: "No. and size of the class rooms (in sq mtr)",
+    details: "40 (44.80 sq. m)",
+  },
+  {
+    information: "No. of class rooms",
+    details: "40",
+  },
+  {
+    information:
+      "No. and size of laboratories including computer labs (in sq mtr)",
+    details: "06",
+  },
+  {
+    information: "No. of laboratories",
+    details: "06",
+  },
+  {
+    information: "Internet facility",
+    details: "Yes",
+  },
+  {
+    information: "No. of girls toilets",
+    details: "36",
+  },
+  {
+    information: "No. of boys toilets",
+    details: "36",
+  },
+  {
+    information:
+      "Link of YouTube video of the inspection of school covering the infrastructure of the school",
+  },
+  {
+    information: "Teacher's list",
+    files: [],
+  },
+];
 export const staffTeachingDetails: [string, string][] = [
   ["Principal", "01"],
   ["Total No. of Teachers", "29"],
-  ["TGT", "08"],
+  ["TGT", "01"],
+  ["PGT", "07"],
   ["PRT", "08"],
   ["Nursery Teachers", "10"],
   ["Teacher : Section Ratio", "1.5:1"],

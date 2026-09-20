@@ -28,7 +28,7 @@ export const site = {
   social: {
     facebook: "https://www.facebook.com/G.DGoenkaKupwara",
     instagram: "https://www.instagram.com/gdgoenka.kupwara",
-    youtube: "https://www.youtube.com/channel/UCDwiesK7cBcVNsfodfI4-Zg",
+    youtube: "https://www.youtube.com/@gd.goenkahandwara",
   },
   links: {
     feePayment: "https://erp.youthconnekt.in/fees/gdgoenkabaramulla/",

@@ -29,8 +29,8 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
-        source: "/book-list",
-        destination: "/curriculum",
+        source: "/know-us/mandatory-disclosure/staff",
+        destination: "/know-us/mandatory-disclosure#staff",
         permanent: true,
       },
     ];

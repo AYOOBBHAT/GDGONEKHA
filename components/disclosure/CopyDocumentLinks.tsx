@@ -5,7 +5,11 @@ import { useState } from "react";
 import { disclosureHref, type DisclosureFile } from "@/lib/mandatoryDisclosure";
 
 function filePath(file: DisclosureFile) {
-  return file.href ?? disclosureHref(file.filename ?? "");
+  if (file.href) {
+    return file.href.startsWith("/documents/") ? file.href : "";
+  }
+  if (!file.filename) return "";
+  return disclosureHref(file.filename);
 }
 
 function absoluteUrl(path: string) {
@@ -49,6 +53,7 @@ export function CopyDocumentLinks({
     <div className="flex flex-wrap gap-2">
       {files.map((file) => {
         const path = filePath(file);
+        if (!path) return null;
         const isCopied = copied === path;
         return (
           <button

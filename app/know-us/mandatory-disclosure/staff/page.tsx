@@ -40,7 +40,7 @@ export default function StaffDetailsPage() {
             <thead className="bg-cream-2">
               <tr>
                 <th scope="col" className="w-16 px-5 py-4 font-semibold text-ink">
-                  No.
+                  Sr. no.
                 </th>
                 <th scope="col" className="px-5 py-4 font-semibold text-ink">
                   Information

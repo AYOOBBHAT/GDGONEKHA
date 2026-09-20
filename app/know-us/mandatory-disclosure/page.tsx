@@ -6,6 +6,8 @@ import { mpdGeneral } from "@/lib/content";
 import {
   documentsAndInformation,
   resultAndAcademics,
+  schoolInfrastructure,
+  staffTeachingDetails,
 } from "@/lib/mandatoryDisclosure";
 import { pageMeta } from "@/lib/seo";
 import { site } from "@/lib/site";
@@ -35,14 +37,14 @@ export default function MandatoryDisclosurePage() {
 
         <section>
           <h2 className="text-xl font-semibold tracking-tight sm:text-2xl">
-            General Information
+            A: General Information
           </h2>
           <div className="mt-6 overflow-x-auto rounded-2xl border border-line bg-white scroll-hint">
             <table className="w-full min-w-[480px] text-left text-sm">
               <thead className="bg-cream-2">
                 <tr>
                   <th scope="col" className="w-16 px-5 py-4 font-semibold text-ink">
-                    No.
+                    Sr. no.
                   </th>
                   <th scope="col" className="px-5 py-4 font-semibold text-ink">
                     Information
@@ -61,7 +63,7 @@ export default function MandatoryDisclosurePage() {
                     <td className="px-5 py-4 font-medium text-ink">
                       {index + 1}
                     </td>
-                    <td className="px-5 py-4 text-muted">{information}</td>
+                    <td className="px-5 py-4 uppercase text-muted">{information}</td>
                     <td className="px-5 py-4 text-ink">{details}</td>
                   </tr>
                 ))}
@@ -74,6 +76,8 @@ export default function MandatoryDisclosurePage() {
           <MandatoryDisclosureTables
             documents={documentsAndInformation}
             academics={resultAndAcademics}
+            staff={staffTeachingDetails}
+            infrastructure={schoolInfrastructure}
           />
         </div>
       </Container>
