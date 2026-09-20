@@ -116,20 +116,20 @@ export type InfrastructureRow = {
 export const schoolInfrastructure: InfrastructureRow[] = [
   {
     information: "Total campus area of the school (in square mtr)",
-    details: "15,175.71",
+    details: "22,763",
   },
   {
     information: "No. and size of the class rooms (in sq mtr)",
-    details: "40 (44.80 sq. m)",
+    details: "35 (44 sq. m)",
   },
   {
     information: "No. of class rooms",
-    details: "40",
+    details: "35",
   },
   {
     information:
       "No. and size of laboratories including computer labs (in sq mtr)",
-    details: "06",
+    details: "06 (56 sq. m)",
   },
   {
     information: "No. of laboratories",
@@ -141,11 +141,11 @@ export const schoolInfrastructure: InfrastructureRow[] = [
   },
   {
     information: "No. of girls toilets",
-    details: "36",
+    details: "30",
   },
   {
     information: "No. of boys toilets",
-    details: "36",
+    details: "30",
   },
   {
     information:
@@ -153,7 +153,12 @@ export const schoolInfrastructure: InfrastructureRow[] = [
   },
   {
     information: "Teacher's list",
-    files: [],
+    files: [
+      {
+        filename: "teachers qualification.xlsx",
+        label: "Teacher's list",
+      },
+    ],
   },
 ];
 export const staffTeachingDetails: [string, string][] = [

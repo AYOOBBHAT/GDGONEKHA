@@ -66,7 +66,6 @@ export function GulmargTour() {
       </p>
       <h3>Escort staff</h3>
       <ul className="mb-6 list-disc space-y-2 pl-5 text-muted">
-        <li>Mr. Maqbool Bhat — Chairman</li>
         <li>Mr. Imtiyaz Dilawar Khan — Transport in-charge</li>
         <li>Ms. Jasmine — Principal</li>
         <li>Ms. Qurat-ul-Fayaz — Academic Coordinator</li>
