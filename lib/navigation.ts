@@ -2,6 +2,7 @@ export type NavLink = {
   label: string;
   href: string;
   external?: boolean;
+  comingSoon?: boolean;
 };
 
 export type NavItem = {
@@ -121,7 +122,7 @@ export const footerNav = {
     { label: "Gallery", href: "/gallery" },
     { label: "News", href: "/news" },
     { label: "Career", href: "/career" },
-    { label: "Content studio", href: "/studio" },
-    { label: "ERP Login", href: "https://erp.youthconnekt.in", external: true },
+    { label: "Content studio", href: "/studio", comingSoon: true },
+    { label: "ERP Login", href: "/erp-login", comingSoon: true },
   ],
 };

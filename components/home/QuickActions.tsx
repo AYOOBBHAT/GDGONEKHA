@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import {
   ArrowUpRight,
   CalendarDays,
@@ -30,9 +33,9 @@ const actions = [
   },
   {
     title: "ERP / Parent Login",
-    href: site.links.erp,
+    href: "/erp-login",
     icon: LogIn,
-    external: true,
+    comingSoon: true,
   },
   {
     title: "Downloads",
@@ -48,6 +51,37 @@ const actions = [
 
 const cardClass =
   "group flex min-h-[3.5rem] items-center justify-between rounded-2xl border border-line bg-white px-4 py-3.5 transition duration-300 hover:-translate-y-1 hover:border-ink/30 hover:shadow-[0_12px_30px_rgba(17,17,17,0.05)]";
+
+function ComingSoonAction({
+  title,
+  icon: Icon,
+}: {
+  title: string;
+  icon: typeof LogIn;
+}) {
+  const [showNotice, setShowNotice] = useState(false);
+
+  return (
+    <button
+      type="button"
+      onClick={() => setShowNotice(true)}
+      className={`${cardClass} w-full text-left`}
+    >
+      <span className="flex items-center gap-3">
+        <span className="flex h-9 w-9 items-center justify-center rounded-full bg-cream-2 text-ink">
+          <Icon size={16} strokeWidth={1.7} />
+        </span>
+        <span className="text-sm font-medium">
+          {showNotice ? "Coming soon" : title}
+        </span>
+      </span>
+      <ArrowUpRight
+        size={16}
+        className="text-muted transition duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-ink"
+      />
+    </button>
+  );
+}
 
 export function QuickActions() {
   return (
@@ -71,7 +105,9 @@ export function QuickActions() {
           );
           return (
             <Reveal key={action.title} delay={index * 0.05}>
-              {action.external ? (
+              {"comingSoon" in action && action.comingSoon ? (
+                <ComingSoonAction title={action.title} icon={action.icon} />
+              ) : "external" in action && action.external ? (
                 <a
                   href={action.href}
                   className={cardClass}

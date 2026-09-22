@@ -4,6 +4,7 @@ import {
   FacebookIcon,
   InstagramIcon,
 } from "@/components/ui/SocialIcons";
+import { ComingSoonButton } from "@/components/ui/ComingSoonButton";
 import { Logo } from "@/components/layout/Logo";
 import { footerNav } from "@/lib/navigation";
 import { site } from "@/lib/site";
@@ -13,7 +14,7 @@ function Column({
   links,
 }: {
   title: string;
-  links: { label: string; href: string; external?: boolean }[];
+  links: { label: string; href: string; external?: boolean; comingSoon?: boolean }[];
 }) {
   return (
     <div>
@@ -21,7 +22,9 @@ function Column({
       <ul className="space-y-1">
         {links.map((link) => (
           <li key={link.href + link.label}>
-            {link.external ? (
+            {link.comingSoon ? (
+              <ComingSoonButton label={link.label} variant="footer" />
+            ) : link.external ? (
               <a
                 href={link.href}
                 className="inline-flex min-h-11 items-center text-sm text-muted transition hover:text-ink"
@@ -123,14 +126,11 @@ export function Footer() {
             >
               Contact
             </Link>
-            <a
-              href={site.links.erp}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex min-h-10 items-center gap-1 transition hover:text-ink"
-            >
-              ERP Login <ArrowUpRight size={12} />
-            </a>
+            <ComingSoonButton
+              label="ERP Login"
+              variant="footerBar"
+              icon={<ArrowUpRight size={12} />}
+            />
           </div>
         </div>
       </div>
