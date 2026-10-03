@@ -122,7 +122,6 @@ export const footerNav = {
     { label: "Gallery", href: "/gallery" },
     { label: "News", href: "/news" },
     { label: "Career", href: "/career" },
-    { label: "Content studio", href: "/studio", comingSoon: true },
     { label: "ERP Login", href: "/erp-login", comingSoon: true },
   ],
 };
