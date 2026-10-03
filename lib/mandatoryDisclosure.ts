@@ -51,8 +51,8 @@ export const documentsAndInformation: DisclosureRow[] = [
       "Copy of valid Building Safety Certificate as per the National Building Code",
     files: [
       {
-        filename: "R&B..pdf",
-        label: "R&B Building Safety Certificate",
+        filename: "PWD.pdf",
+        label: "PWD Building Safety Certificate",
       },
     ],
   },
@@ -68,7 +68,7 @@ export const documentsAndInformation: DisclosureRow[] = [
   },
   {
     information: "Copies of valid Water, Health and Sanitation Certificates",
-    files: [{ filename: "Sanitary.pdf", label: "Sanitation Certificate" }],
+    files: [{ filename: "sanity.pdf", label: "Sanitation Certificate" }],
   },
 ];
 

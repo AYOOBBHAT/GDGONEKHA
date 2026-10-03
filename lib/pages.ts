@@ -721,7 +721,7 @@ export const pages: Record<string, PageContent> = {
     blocks: [
       {
         type: "p",
-        text: "Contact details, staff names and campus facts on this site are drawn from GD Goenka Public School Kupwara’s public pages. Children’s full photographs are not reproduced for birthday notices; initials are used instead.",
+        text: "Contact details, staff names and campus facts on this site are drawn from GD Goenka Public School Kupwara’s public pages.",
       },
       {
         type: "p",
