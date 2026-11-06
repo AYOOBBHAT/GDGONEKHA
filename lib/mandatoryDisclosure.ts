@@ -59,7 +59,12 @@ export const documentsAndInformation: DisclosureRow[] = [
   {
     information:
       "Copy of valid Fire Safety Certificate issued by the competent authority",
-    files: [{ filename: "Fire emergency..pdf", label: "Fire and Emergency Certificate" }],
+    files: [
+      {
+        filename: "school fire and safety.jpeg",
+        label: "Fire and Safety Certificate",
+      },
+    ],
   },
   {
     information:
